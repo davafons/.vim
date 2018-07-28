@@ -17,8 +17,9 @@ syntax enable           " enable syntax processing
 
 set tabstop=4           " number of visual spaces per TAB
 set softtabstop=4       " number of spaces in TAB
+set shiftwidth=4        " when identing with '>', use 4 spaces width
 set expandtab           " tabs are spaces
-set ai                  " set auto-identation
+set ai                  " enable auto identation 
 
 " UI Config
 set number              " show line numbers
