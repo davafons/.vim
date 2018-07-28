@@ -35,3 +35,6 @@ set hlsearch            " highlight matches
 " Movement
 nnoremap j gj
 nnoremap k gk
+
+" Files 
+autocmd BufNewFile,BufFilePre,BufRead *.md set filetype=markdown " markdown highlighting detection for .md files (and not .markdown only)
