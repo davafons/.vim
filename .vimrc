@@ -31,6 +31,7 @@ set showmatch           " highlight matching [{((}]
 " Searching
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
+set smartcase           " search lo/up case if no uppercase entered
 
 " Movement
 nnoremap j gj
