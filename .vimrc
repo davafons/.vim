@@ -38,6 +38,9 @@ nnoremap j gj
 nnoremap k gk
 set backspace=indent,eol,start " don't stop backspace
 
+nmap <c-s> :w<CR>
+imap <c-s> <Esc>:w<CR>a
+
 " Files 
 autocmd BufNewFile,BufFilePre,BufRead *.md set filetype=markdown " markdown highlighting detection for .md files (and not .markdown only)
 set autochdir           " automatically set working directory when cd
