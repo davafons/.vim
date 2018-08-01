@@ -33,9 +33,10 @@ set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
 set smartcase           " search lo/up case if no uppercase entered
 
-" Movement
+" Movement, mappings
 nnoremap j gj
 nnoremap k gk
+set backspace=indent,eol,start " don't stop backspace
 
 " Files 
 autocmd BufNewFile,BufFilePre,BufRead *.md set filetype=markdown " markdown highlighting detection for .md files (and not .markdown only)
