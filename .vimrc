@@ -36,6 +36,8 @@ set smartcase           " search lo/up case if no uppercase entered
 " Movement, mappings
 nnoremap j gj
 nnoremap k gk
+noremap <A-j> gT
+noremap <A-k> gt
 set backspace=indent,eol,start " don't stop backspace
 
 nmap <c-s> :w<CR>
