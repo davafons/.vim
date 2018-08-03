@@ -28,6 +28,9 @@ set wildmenu            " visual autocomplete for command menu
 set lazyredraw          " redraw only when we need to
 set showmatch           " highlight matching [{((}]
 
+" GUI Config
+set guioptions-=L       " remove left-hand scroll bar
+
 " Searching
 set incsearch           " search as characters are entered
 set hlsearch            " highlight matches
