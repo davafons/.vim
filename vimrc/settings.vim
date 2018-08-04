@@ -14,7 +14,9 @@ set cursorline          " highlight current line
 set showcmd             " show as commands are typed
 set wildmenu            " visual autocomplete for command menu
 set lazyredraw          " redraw only when we need to
-set showmatch       
+set showmatch           " Not really sure 
+set laststatus=2        " always display status line 
+set noshowmode          " don't show --INSERT-- --NORMAL-- modes
 
 " Searching
 set incsearch           " search as characters are entered

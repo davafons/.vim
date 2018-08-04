@@ -7,5 +7,9 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'       " Required 
 Plugin 'jiangmiao/auto-pairs'       " Auto pairs
 
+
+" Interface
+Plugin 'itchyny/lightline.vim'      " Status line
+
 call vundle#end()
 
