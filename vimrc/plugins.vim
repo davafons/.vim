@@ -11,5 +11,9 @@ Plugin 'jiangmiao/auto-pairs'       " Auto pairs
 " Interface
 Plugin 'itchyny/lightline.vim'      " Status line
 
+
+" Typing/maps
+Plugin 'jiangmiao/auto-pairs'       " Auto pair braces
+Plugin 'tpope/vim-surround'         " Mappings to change braces
 call vundle#end()
 
