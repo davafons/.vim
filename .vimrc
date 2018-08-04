@@ -25,6 +25,7 @@ set autoindent          " enable auto indentation
 " UI Config
 set number              " show line numbers
 set cursorline          " highlight current line
+set showcmd             " show as commands are typed
 set wildmenu            " visual autocomplete for command menu
 set lazyredraw          " redraw only when we need to
 set showmatch           " highlight matching [{((}]
