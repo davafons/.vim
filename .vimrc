@@ -1,55 +1,14 @@
-""" VIM configuration file
+" ------------------------------
+" --- VIM configuration file --- 
+" ------------------------------
 
-" System configuration
+set nocompatible
+filetype plugin indent on
+syntax on
 
-" On Windows, also use '.vim' instead of 'vimfiles'
-" Use mingw32-make when using command :make
-if has('win32')
-    set runtimepath=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after
-    set makeprg=mingw32-make
-endif" Colors
 
-" Colors
-
-colorscheme codedark    " VS color scheme
-
-syntax enable           " enable syntax processing
-
-" Spaces & Tabs
-
-set tabstop=4           " number of visual spaces per TAB
-set softtabstop=4       " number of spaces in TAB
-set shiftwidth=4        " when indenting with '>', use 4 spaces width
-set expandtab           " tabs are spaces
-set smartindent         " auto indent next level when starting a block
-set autoindent          " enable auto indentation 
-
-" UI Config
-set number              " show line numbers
-set cursorline          " highlight current line
-set showcmd             " show as commands are typed
-set wildmenu            " visual autocomplete for command menu
-set lazyredraw          " redraw only when we need to
-set showmatch           " highlight matching [{((}]
-
-" GUI Config
-set guioptions-=L       " remove left-hand scroll bar
-
-" Searching
-set incsearch           " search as characters are entered
-set hlsearch            " highlight matches
-set smartcase           " search lo/up case if no uppercase entered
-
-" Movement, mappings
-nnoremap j gj
-nnoremap k gk
-noremap <A-j> gT
-noremap <A-k> gt
-set backspace=indent,eol,start " don't stop backspace
-
-nmap <c-s> :w<CR>
-imap <c-s> <Esc>:w<CR>a
-
-" Files 
-autocmd BufNewFile,BufFilePre,BufRead *.md set filetype=markdown " markdown highlighting detection for .md files (and not .markdown only)
-set autochdir           " automatically set working directory when cd
+source $HOME/.vim/vimrc/platform.vim
+source $HOME/.vim/vimrc/plugins.vim
+source $HOME/.vim/vimrc/settings.vim
+source $HOME/.vim/vimrc/colors.vim
+source $HOME/.vim/vimrc/mappings.vim
