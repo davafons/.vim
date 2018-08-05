@@ -9,6 +9,8 @@ Plugin 'VundleVim/Vundle.vim'       " Required
 
 " Interface
 Plugin 'itchyny/lightline.vim'      " Status line
+Plugin 'tpope/vim-fugitive'         " Git support
+Plugin 'airblade/vim-gitgutter'     " Show git sign column
 
 
 " Typing/maps

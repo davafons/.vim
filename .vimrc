@@ -8,6 +8,7 @@ syntax on
 
 source $HOME/.vim/vimrc/platform.vim
 source $HOME/.vim/vimrc/plugins.vim
+source $HOME/.vim/vimrc/plugin_settings.vim
 source $HOME/.vim/vimrc/settings.vim
 source $HOME/.vim/vimrc/colors.vim
 source $HOME/.vim/vimrc/mappings.vim
