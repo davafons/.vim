@@ -16,8 +16,6 @@ Plugin 'jiangmiao/auto-pairs'       " Auto pair braces
 Plugin 'tpope/vim-surround'         " Mappings to change braces
 
 
-" Color Schemes
-Plugin 'morhetz/gruvbox'
 
 
 call vundle#end()
