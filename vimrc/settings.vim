@@ -24,10 +24,10 @@ set hlsearch            " highlight matches
 set smartcase           " search lo/up case if no uppercase entered
 
 " Files
-set autochdir           " automatically set working directory when cd
+"set autochdir           " automatically set working directory when cd
 
 " Paths to find headers
 set path+=C:\MinGW\include
 set path+=C:\MinGW\lib\gcc\mingw32\6.3.0\include\c++
-set path+=.\include
-set path+=..\include
+set path+=$PWD/**
+set path+=.,,**
