@@ -8,10 +8,6 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'           " Required 
 
 
-" Autocomplete
-Plugin 'Valloric/YouCompleteMe'         " Autocomplete code
-Plugin 'ludovicchabant/vim-gutentags'   " Automatically generate tags for the project
-
 
 " Interface
 Plugin 'itchyny/lightline.vim'          " Status line
