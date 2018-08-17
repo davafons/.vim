@@ -6,11 +6,10 @@ set nocompatible
 set encoding=utf-8
 syntax on
 
-
-source $HOME/.vim/vimrc/platform.vim
-source $HOME/.vim/vimrc/plugins.vim
-source $HOME/.vim/vimrc/plugin_settings.vim
-source $HOME/.vim/vimrc/settings.vim
-source $HOME/.vim/vimrc/style.vim
-source $HOME/.vim/vimrc/mappings.vim
-source $HOME/.vim/vimrc/spelling.vim
+source ~/.vim/vimrc/platform.vim
+source ~/.vim/vimrc/plugins.vim
+source ~/.vim/vimrc/plugin_settings.vim
+source ~/.vim/vimrc/settings.vim
+source ~/.vim/vimrc/style.vim
+source ~/.vim/vimrc/mappings.vim
+source ~/.vim/vimrc/spelling.vim
