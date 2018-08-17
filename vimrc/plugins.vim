@@ -23,6 +23,8 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'    " Add git suppor to NerdTree
 Plugin 'ryanoasis/vim-devicons'         " Use icons from NerdFonts
 
 
+" Syntax/Tags
+Plugin 'scrooloose/syntastic'           " Syntax highlighting and error checking
 
 " Typing/maps
 Plugin 'jiangmiao/auto-pairs'           " Auto pair braces
