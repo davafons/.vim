@@ -36,5 +36,3 @@ let g:syntastic_cpp_compiler = "g++"
 let g:syntastic_cpp_compiler_options = "-std=c++11 -Wall -Wextra"
 let g:syntastic_cpp_include_dirs = ['include', 'lib']
 let g:syntastic_cpp_check_header = 1
-
-

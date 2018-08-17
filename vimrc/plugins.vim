@@ -36,7 +36,6 @@ Plugin 'sheerun/vim-polyglot'           " Syntax highlighting pack
 " Typing/maps
 Plugin 'jiangmiao/auto-pairs'           " Auto pair braces
 Plugin 'tpope/vim-surround'             " Mappings to change braces
-Plugin 'tpope/vim-unimpaired'           " Add bracket mappings
 Plugin 'tpope/vim-commentary'           " Auto comment with gc
 Plugin 'tpope/vim-repeat'               " Repeat mapppings from plugins
 

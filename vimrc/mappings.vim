@@ -60,14 +60,5 @@ nnoremap <silent> <Leader>f :NERDTreeToggle<Enter>
 nnoremap <silent> <Leader>v :NERDTreeFind<CR>
 
 " Tagbar
-nnoremap <Leader>t :TagbarToggle<CR>
-
-" Unimpaired
-" Map [ to < for easier use of unimpaired mappings
-nmap < [
-nmap > ]
-omap < [
-omap > ]
-xmap < [
-xmap > ]
+nnoremap <silent> <Leader>t :TagbarToggle<CR>
 
