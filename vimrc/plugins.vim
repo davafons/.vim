@@ -25,6 +25,9 @@ Plugin 'ryanoasis/vim-devicons'         " Use icons from NerdFonts
 
 " Syntax/Tags
 Plugin 'scrooloose/syntastic'           " Syntax highlighting and error checking
+Plugin 'ludovicchabant/vim-gutentags'   " Automatic tags generation
+Plugin 'majutsushi/tagbar'              " Windows with indexed tags info
+
 
 " Typing/maps
 Plugin 'jiangmiao/auto-pairs'           " Auto pair braces

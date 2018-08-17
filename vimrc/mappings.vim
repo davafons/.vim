@@ -45,6 +45,11 @@ set pastetoggle=<F2>
 " Easy quit shortcut
 nnoremap <Leader>q :q<CR>
 
+" Jump to tag 
+nnoremap <Leader>d <C-]>
+
+" Return from tag stack
+nnoremap <Leader>r <C-T>
 
 
 
@@ -54,6 +59,8 @@ nnoremap <Leader>q :q<CR>
 nnoremap <silent> <Leader>f :NERDTreeToggle<Enter>
 nnoremap <silent> <Leader>v :NERDTreeFind<CR>
 
+" Tagbar
+nnoremap <Leader>t :TagbarToggle<CR>
 
 " Unimpaired
 " Map [ to < for easier use of unimpaired mappings
