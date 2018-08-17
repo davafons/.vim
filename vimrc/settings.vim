@@ -2,11 +2,13 @@
 
 " Spaces & Tabs
 set tabstop=4           " number of visual spaces per TAB
-set softtabstop=4       " number of spaces in TAB
 set shiftwidth=4        " when indenting with '>', use 4 spaces width
 set expandtab           " tabs are spaces
-set smartindent         " auto indent next level when starting a block
-set autoindent          " enable auto indentation 
+set smarttab            " insert tabs according to shiftwidth, not tabstop
+set autoindent          " enable auto indentation
+set copyindent          " copy previous indentation on autoindenting
+set shiftround          " use multiples of shiftwidth when indenting
+
 
 " UI Config
 set number              " show line numbers
