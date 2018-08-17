@@ -45,3 +45,12 @@ set pastetoggle=<F2>
 " Easy quit shortcut
 nnoremap <Leader>q :q<CR>
 
+
+
+
+""""" Plugin mappings
+
+" NERDTree
+nnoremap <silent> <Leader>f :NERDTreeToggle<Enter>
+nnoremap <silent> <Leader>v :NERDTreeFind<CR>
+

@@ -8,5 +8,5 @@ colorscheme codedark " VS color scheme
 if has("gui_running")
     set guioptions-=L   " Remove left scrollbar
     set guioptions-=T   " Remove toolbar
-    set guifont=Consolas:h12:cANSI:qDRAFT
+    set guifont=Consolas_NF:h12:cANSI:qDRAFT    " Consolas NF patched
 endif

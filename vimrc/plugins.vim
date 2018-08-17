@@ -18,6 +18,10 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'itchyny/lightline.vim'          " Status line
 Plugin 'tpope/vim-fugitive'             " Git support
 Plugin 'airblade/vim-gitgutter'         " Show git sign column
+Plugin 'scrooloose/nerdtree'            " Treeview 
+Plugin 'Xuyuanp/nerdtree-git-plugin'    " Add git suppor to NerdTree
+Plugin 'ryanoasis/vim-devicons'         " Use icons from NerdFonts
+
 
 
 " Typing/maps
