@@ -9,6 +9,11 @@ Plugin 'VundleVim/Vundle.vim'           " Required
 
 
 
+" Colorschemes
+Plugin 'tomasiser/vim-code-dark'
+Plugin 'altercation/vim-colors-solarized'
+
+
 " Interface
 Plugin 'itchyny/lightline.vim'          " Status line
 Plugin 'tpope/vim-fugitive'             " Git support
