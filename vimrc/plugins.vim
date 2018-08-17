@@ -2,6 +2,7 @@
 
 
 " Initialize Vundle
+filetype off
 set rtp+=$HOME/.vim/bundle/Vundle.vim/
 call vundle#begin()
 
@@ -23,11 +24,14 @@ Plugin 'Xuyuanp/nerdtree-git-plugin'    " Add git suppor to NerdTree
 Plugin 'ryanoasis/vim-devicons'         " Use icons from NerdFonts
 
 
-" Syntax/Tags
-Plugin 'scrooloose/syntastic'           " Syntax highlighting and error checking
+" Checking/Tags
+Plugin 'scrooloose/syntastic'           " Syntax cheking
 Plugin 'ludovicchabant/vim-gutentags'   " Automatic tags generation
-Plugin 'majutsushi/tagbar'              " Windows with indexed tags info
+Plugin 'majutsushi/tagbar'              " Window with indexed tags info
 
+
+" Syntax highlighting
+Plugin 'sheerun/vim-polyglot'           " Syntax highlighting pack
 
 " Typing/maps
 Plugin 'jiangmiao/auto-pairs'           " Auto pair braces
@@ -39,4 +43,5 @@ Plugin 'tpope/vim-repeat'               " Repeat mapppings from plugins
 
 
 call vundle#end()
+filetype plugin indent on
 
