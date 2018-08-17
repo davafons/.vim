@@ -54,3 +54,13 @@ nnoremap <Leader>q :q<CR>
 nnoremap <silent> <Leader>f :NERDTreeToggle<Enter>
 nnoremap <silent> <Leader>v :NERDTreeFind<CR>
 
+
+" Unimpaired
+" Map [ to < for easier use of unimpaired mappings
+nmap < [
+nmap > ]
+omap < [
+omap > ]
+xmap < [
+xmap > ]
+
