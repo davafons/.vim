@@ -3,7 +3,7 @@
 
 " Lightline
 let g:lightline = {
-    \ 'colorscheme': 'wombat',
+    \ 'colorscheme': 'solarized',
     \ 'active': {
     \   'left': [ [ 'mode', 'paste' ],
     \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]

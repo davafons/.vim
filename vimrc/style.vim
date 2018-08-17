@@ -1,8 +1,9 @@
 " Colors configuration for vim and gVim
 
 
-"Colorschemes
-colorscheme codedark " VS color scheme
+" Colorschemes
+set background=dark
+colorscheme solarized 
 
 " gVim
 if has("gui_running")
