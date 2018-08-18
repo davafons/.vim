@@ -8,6 +8,8 @@ set smarttab            " Insert tabs according to shiftwidth, not tabstop
 set autoindent          " Enable auto indentation
 set copyindent          " Copy previous indentation on autoindenting
 set shiftround          " Use multiples of shiftwidth when indenting
+set cinoptions+=L0      " Don't deindent when typing std::
+set cinoptions+=g0      " Don't indent private:, public: ... labels
 
 
 " UI Config
