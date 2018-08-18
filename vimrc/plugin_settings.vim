@@ -45,3 +45,11 @@ let g:syntastic_cpp_compiler = "g++"
 let g:syntastic_cpp_compiler_options = "-std=c++11 -Wall -Wextra"
 let g:syntastic_cpp_include_dirs = ['include', 'lib']
 let g:syntastic_cpp_check_header = 1
+
+
+" Clang_complete
+let g:clang_library_path ='C:/Program Files/LLVM/bin'
+let g:clang_complete_macros = 1
+let g:clang_close_preview = 1
+let g:clang_user_options = '-std=c++11 -Wall -Wextra'
+command! UpdateClangConfig make clean | make CXX="python \%HOMEPATH\%\.vim\bundle\clang_complete\bin\cc_args.py g++"
