@@ -24,6 +24,12 @@ let NERDTreeDirArrows = 1           " Make NERDTRee UI simpler
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
+" Devicons
+" Hide [] around icons
+if exists('g:loaded_webdevicons')
+    call webdevicons#refresh()
+endif
+
 
 " Syntastic
 let g:syntastic_always_populate_loc_list = 1
