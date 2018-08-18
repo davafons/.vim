@@ -2,6 +2,7 @@
 let mapleader=","
 
 
+
 """" Movement mappings 
 
 " Move through visual lines
@@ -24,6 +25,11 @@ map <down> <nop>
 map <left> <nop>
 map <right> <nop>
 
+" Go to declaration
+nmap <Leader>d <C-]>
+" Go to definition
+nmap <Leader>gd g<C-]>
+
 
 
 """"" Shortcut mappings
@@ -45,11 +51,8 @@ set pastetoggle=<F2>
 " Easy quit shortcut
 nnoremap <Leader>q :q<CR>
 
-" Jump to tag 
-nnoremap <Leader>d <C-]>
-
-" Return from tag stack
-nnoremap <Leader>r <C-T>
+" Close buffer without closing window
+nmap <silent> <Leader>c :bp<bar>sp<bar>bn<bar>bd<CR>
 
 
 
