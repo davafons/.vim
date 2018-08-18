@@ -15,14 +15,17 @@ let g:lightline = {
 
 
 " NERDTree
-au VimEnter * NERDTree              " Auto open NERDTree on startup
 let NERDTreeQuitOnOpen = 1          " Quit when opening file
 let NERDTreeAutoDeleteBuffer = 1    " Delete buffer when deleting files
+let NERDTreeCaseSensitiveSort = 1   " Show uppercase first, then lowercase
+let NERDTreeNaturalSort = 1         " Sort as 1, 2, 10 instead of 1, 10, 2
+let NERDTreeChDirMode = 1           " Change NERDTree cwd when opening vim
 let NERDTreeMinimalUI = 1           " Hide ? for help
-let NERDTreeDirArrows = 1           " Make NERDTRee UI simpler
+let NERDTreeShowHidden = 1          " Show hidden files
 "Open NERDTree if no files specified
-autocmd StdinReadPre * let s:std_in=1
+autocmd StdinReadPre * let s:std_in = 1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd VimEnter * wincmd p
 
 " Devicons
 " Hide [] around icons
@@ -33,7 +36,7 @@ endif
 
 " Syntastic
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_loc_list_height=3
+let g:syntastic_loc_list_height = 3
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
