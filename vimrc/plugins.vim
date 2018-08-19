@@ -3,7 +3,7 @@
 
 " Initialize Vundle
 filetype off
-set rtp+=$HOME/.vim/bundle/Vundle.vim/
+set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'           " Required 

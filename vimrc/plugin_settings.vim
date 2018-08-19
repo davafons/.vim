@@ -13,9 +13,11 @@ let g:lightline = {
     \ },
     \ }
 
+
 " AutoPairs
 let g:AutoPairsMapCR = 0
 imap <expr><CR> "\<CR>\<Plug>AutoPairsReturn"
+
 
 " NERDTree
 let NERDTreeQuitOnOpen = 1          " Quit when opening file
@@ -30,11 +32,13 @@ autocmd StdinReadPre * let s:std_in = 1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd VimEnter * wincmd p
 
+
 " Devicons
 " Hide [] around icons
 if exists('g:loaded_webdevicons')
     call webdevicons#refresh()
 endif
+
 
 
 " Syntastic
@@ -51,9 +55,11 @@ let g:syntastic_cpp_include_dirs = ['include', 'lib', 'src']
 let g:syntastic_cpp_check_header = 1
 
 
+
 " Clang_complete
-let g:clang_library_path ='C:/Program Files/LLVM/bin'
+let g:clang_library_path = '/LLVM/bin'
+let g:clang_hl_errors = 0
 let g:clang_complete_macros = 1
 let g:clang_close_preview = 1
 let g:clang_user_options = '-std=c++11 -Wall -Wextra'
-command! UpdateClangConfig make CC="python \%HOMEPATH\%\.vim\bundle\clang_complete\bin\cc_args.py gcc" CXX="python \%HOMEPATH\%\.vim\bundle\clang_complete\bin\cc_args.py g++" -B
+command! UpdateClangConfig make CC="python ~\.vim\bundle\clang_complete\bin\cc_args.py gcc" CXX="python ~\.vim\bundle\clang_complete\bin\cc_args.py g++" -B
