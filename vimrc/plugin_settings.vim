@@ -55,4 +55,4 @@ let g:clang_library_path ='C:/Program Files/LLVM/bin'
 let g:clang_complete_macros = 1
 let g:clang_close_preview = 1
 let g:clang_user_options = '-std=c++11 -Wall -Wextra'
-command! UpdateClangConfig make clean | make CXX="python \%HOMEPATH\%\.vim\bundle\clang_complete\bin\cc_args.py g++"
+command! UpdateClangConfig make CC="python \%HOMEPATH\%\.vim\bundle\clang_complete\bin\cc_args.py gcc" CXX="python \%HOMEPATH\%\.vim\bundle\clang_complete\bin\cc_args.py g++" -B
