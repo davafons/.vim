@@ -9,4 +9,4 @@ iab teh the
 iab itn int
 iab enld endl
 iab stirng string
-
+iab mian main

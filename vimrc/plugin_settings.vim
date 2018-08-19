@@ -40,7 +40,6 @@ if exists('g:loaded_webdevicons')
 endif
 
 
-
 " Syntastic
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_loc_list_height = 4
@@ -56,6 +55,7 @@ let g:syntastic_cpp_config_file = '.clang_complete'
 let g:syntastic_cpp_include_dirs = ['include', 'lib', 'src']
 let g:syntastic_cpp_check_header = 1
 let g:syntastic_cpp_cpplint_exec = 'cpplint.py' 
+let g:syntastic_cpp_cpplint_args = '--filter=-legal/copyright'
 
 
 
@@ -70,3 +70,4 @@ command! UpdateClangConfig make CC="python ~\.vim\bundle\clang_complete\bin\cc_a
 " YouCompleteMe
 let g:ycm_show_diagnostics_ui = 0
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+let g:ycm_semantic_triggers = { 'cpp,objcpp' : ['->', '.', '::', 're!SDL_', ' re!gl'] }

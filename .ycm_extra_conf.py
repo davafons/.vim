@@ -9,13 +9,10 @@ BASE_FLAGS = [
         '-Wall',
         '-Wextra',
         '-Werror',
-        '-Wno-long-long',
-        '-Wno-variadic-macros',
-        '-fexceptions',
-        '-ferror-limit=10000',
-        '-DNDEBUG',
         '-std=c++11',
-        '-xc++'
+        '-xc++',
+        '-I', './include',
+        '-I', '../include',
         ]
 
 SOURCE_EXTENSIONS = [
@@ -40,7 +37,8 @@ HEADER_EXTENSIONS = [
         ]
 
 HEADER_DIRECTORIES = [
-        'include'
+        'include',
+        'src'
         ]
 
 def IsHeaderFile(filename):
