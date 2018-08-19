@@ -47,9 +47,11 @@ let g:syntastic_loc_list_height = 4
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_aggregate_errors = 1
 " C++ options
+let g:syntastic_cpp_checkers = ['gcc', 'cpplint']
 let g:syntastic_cpp_compiler = 'g++'
-let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++ -Wall -Wextra -pedantic -Wdisabled-optimization -Wlogical-op -Wredundant-decls -Wshadow'
+let g:syntastic_cpp_compiler_options = '-std=c++11 -Wall -Wextra -pedantic -Wdisabled-optimization -Wlogical-op -Wredundant-decls -Wshadow'
 let g:syntastic_cpp_config_file = '.clang_complete'
 let g:syntastic_cpp_include_dirs = ['include', 'lib', 'src']
 let g:syntastic_cpp_check_header = 1
@@ -62,5 +64,5 @@ let g:clang_library_path = '/LLVM/bin'
 let g:clang_hl_errors = 0
 let g:clang_complete_macros = 1
 let g:clang_close_preview = 1
-let g:clang_user_options = '-std=c++11 -Wall -Wextra'
+let g:clang_user_options = ' -std=c++11 -Wall -Wextra'
 command! UpdateClangConfig make CC="python ~\.vim\bundle\clang_complete\bin\cc_args.py gcc" CXX="python ~\.vim\bundle\clang_complete\bin\cc_args.py g++" -B
