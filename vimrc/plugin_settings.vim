@@ -13,6 +13,9 @@ let g:lightline = {
     \ },
     \ }
 
+" AutoPairs
+let g:AutoPairsMapCR = 0
+imap <expr><CR> "\<CR>\<Plug>AutoPairsReturn"
 
 " NERDTree
 let NERDTreeQuitOnOpen = 1          " Quit when opening file
