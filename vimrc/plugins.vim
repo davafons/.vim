@@ -40,6 +40,7 @@ Plugin 'jiangmiao/auto-pairs'           " Auto pair braces
 Plugin 'tpope/vim-surround'             " Mappings to change braces
 Plugin 'tpope/vim-commentary'           " Auto comment with gc
 Plugin 'tpope/vim-repeat'               " Repeat mapppings from plugins
+Plugin 'vim-scripts/a.vim'              " Swap between .h and .cpp files
 
 
 

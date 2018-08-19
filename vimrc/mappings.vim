@@ -65,3 +65,7 @@ nnoremap <silent> <Leader>v :NERDTreeFind<CR>
 " Tagbar
 nnoremap <silent> <Leader>t :TagbarToggle<CR>
 
+" a.vim
+" Switch to header/cpp
+nnoremap <silent> <Leader>a :A<CR>
+nnoremap <silent> <Leader>s :AS<CR>
