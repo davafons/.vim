@@ -7,6 +7,7 @@ set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'           " Required 
+Plugin 'Shougo/vimproc.vim'             " Used by other plugins
 
 
 
@@ -32,8 +33,9 @@ Plugin 'Rip-Rip/clang_complete'         " Clang based code complete
 Plugin 'vim-scripts/AutoComplPop'       " Automatically open complete window
 
 
-" Syntax highlighting
+" Syntax/Style
 Plugin 'sheerun/vim-polyglot'           " Syntax highlighting pack
+Plugin 'rhysd/vim-clang-format'         " Format with specific coding style
 
 " Typing/maps
 Plugin 'jiangmiao/auto-pairs'           " Auto pair braces

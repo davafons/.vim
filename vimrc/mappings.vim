@@ -74,5 +74,9 @@ nnoremap <silent> <Leader>t :TagbarToggle<CR>
 nnoremap <silent> <Leader>a :A<CR>
 nnoremap <silent> <Leader>s :AS<CR>
 
+" vim-clang-format
+autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
+autocmd Filetype c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
+
 " Syntastic
 nnoremap <Leader>cc :SyntasticCheck cpplint<CR>

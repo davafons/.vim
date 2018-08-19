@@ -1,8 +1,8 @@
 " General vim settings
 
 " Spaces & Tabs
-set tabstop=4           " Number of visual spaces per TAB
-set shiftwidth=4        " When indenting with '>', use 4 spaces width
+set tabstop=2           " Number of visual spaces per TAB
+set shiftwidth=2        " When indenting with '>', use 4 spaces width
 set expandtab           " Tabs are spaces
 set smarttab            " Insert tabs according to shiftwidth, not tabstop
 set autoindent          " Enable auto indentation
@@ -21,7 +21,6 @@ set showmatch           " Show matching parenthesis
 set laststatus=2        " Always display status line
 set noshowmode          " Don't show --INSERT-- --NORMAL-- modes
 set hidden              " Hide buffers instead of closing
-set nowrap              " Don't wrap lines
 set title               " Show terminal's title
 set backspace=indent,eol,start  " Godmode backspace
 set noerrorbells        " No error beep
