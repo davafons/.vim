@@ -30,6 +30,10 @@ nmap <Leader>d <C-]>
 " Go to definition
 nmap <Leader>gd g<C-]>
 
+" Move to next/prev error
+nnoremap <C-n> :lnext<CR>
+nnoremap <C-p> :lprev<CR>
+
 
 
 """"" Shortcut mappings
@@ -69,3 +73,6 @@ nnoremap <silent> <Leader>t :TagbarToggle<CR>
 " Switch to header/cpp
 nnoremap <silent> <Leader>a :A<CR>
 nnoremap <silent> <Leader>s :AS<CR>
+
+" Syntastic
+nnoremap <Leader>cc :SyntasticCheck cpplint<CR>

@@ -43,16 +43,17 @@ endif
 
 " Syntastic
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_loc_list_height = 3
+let g:syntastic_loc_list_height = 4
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 " C++ options
-let g:syntastic_cpp_compiler = "g++"
-let g:syntastic_cpp_compiler_options = "-std=c++11 -Wall -Wextra -pedantic -Wdisabled-optimization -Wlogical-op -Wredundant-decls -Wshadow"
-let g:syntastic_cpp_config_file = ".clang_complete"
+let g:syntastic_cpp_compiler = 'g++'
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++ -Wall -Wextra -pedantic -Wdisabled-optimization -Wlogical-op -Wredundant-decls -Wshadow'
+let g:syntastic_cpp_config_file = '.clang_complete'
 let g:syntastic_cpp_include_dirs = ['include', 'lib', 'src']
 let g:syntastic_cpp_check_header = 1
+let g:syntastic_cpp_cpplint_exec = 'cpplint.py' 
 
 
 
