@@ -26,11 +26,10 @@ Plugin 'ryanoasis/vim-devicons'         " Use icons from NerdFonts
 
 
 " Checking/Tags
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/syntastic'           " Syntax cheking
 Plugin 'ludovicchabant/vim-gutentags'   " Automatic tags generation
 Plugin 'majutsushi/tagbar'              " Window with indexed tags info
-Plugin 'Rip-Rip/clang_complete'         " Clang based code complete
-Plugin 'vim-scripts/AutoComplPop'       " Automatically open complete window
 
 
 " Syntax/Style

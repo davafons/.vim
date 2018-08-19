@@ -66,3 +66,7 @@ let g:clang_complete_macros = 1
 let g:clang_close_preview = 1
 let g:clang_user_options = ' -std=c++11 -Wall -Wextra'
 command! UpdateClangConfig make CC="python ~\.vim\bundle\clang_complete\bin\cc_args.py gcc" CXX="python ~\.vim\bundle\clang_complete\bin\cc_args.py g++" -B
+
+" YouCompleteMe
+let g:ycm_show_diagnostics_ui = 0
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
