@@ -45,8 +45,9 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 " C++ options
 let g:syntastic_cpp_compiler = "g++"
-let g:syntastic_cpp_compiler_options = "-std=c++11 -Wall -Wextra"
-let g:syntastic_cpp_include_dirs = ['include', 'lib']
+let g:syntastic_cpp_compiler_options = "-std=c++11 -Wall -Wextra -pedantic -Wdisabled-optimization -Wlogical-op -Wredundant-decls -Wshadow"
+let g:syntastic_cpp_config_file = ".clang_complete"
+let g:syntastic_cpp_include_dirs = ['include', 'lib', 'src']
 let g:syntastic_cpp_check_header = 1
 
 
