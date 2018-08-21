@@ -80,3 +80,13 @@ autocmd Filetype c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
 
 " Syntastic
 nnoremap <Leader>cc :SyntasticCheck cpplint<CR>
+
+
+" YouCompleteMe
+nnoremap <Leader>gg :YcmCompleter GoTo<CR>
+nnoremap <Leader>gi :YcmCompleter GoToInclude<CR>
+nnoremap <Leader>gd :YcmCompleter GoToDeclaration<CR>
+nnoremap <Leader>gf :YcmCompleter GoToDefinition<CR>
+nnoremap <Leader>gt :Ycmcompleter GetType<CR>
+nnoremap <Leader>gp :YcmCompleter GetParent<CR>
+nnoremap <Leader>go :YcmCompleter GetDoc<CR>

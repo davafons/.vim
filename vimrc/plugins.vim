@@ -26,7 +26,7 @@ Plugin 'ryanoasis/vim-devicons'         " Use icons from NerdFonts
 
 
 " Checking/Tags
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'         " Automatic completion popup
 Plugin 'scrooloose/syntastic'           " Syntax cheking
 Plugin 'ludovicchabant/vim-gutentags'   " Automatic tags generation
 Plugin 'majutsushi/tagbar'              " Window with indexed tags info

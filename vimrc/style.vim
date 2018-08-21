@@ -1,13 +1,14 @@
 " Colors configuration for vim and gVim
 
-
-" Colorschemes
-set background=dark
-colorscheme solarized 
+set t_Co=256
+set guifont="Consolas NF 12"   " Consolas NF patched
 
 " gVim
 if has("gui_running")
     set guioptions-=L   " Remove left scrollbar
     set guioptions-=T   " Remove toolbar
-    set guifont=Consolas_NF:h12:cANSI:qDRAFT    " Consolas NF patched
 endif
+
+" Colorschemes
+set background=dark
+colorscheme solarized 

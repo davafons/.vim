@@ -1,7 +1,7 @@
 " Settings for specific plugins
 
 
-" Lightline
+""" Lightline
 let g:lightline = {
     \ 'colorscheme': 'solarized',
     \ 'active': {
@@ -14,12 +14,15 @@ let g:lightline = {
     \ }
 
 
-" AutoPairs
+
+""" AutoPairs
+" Fix error with AutoPairs inserting code when CR
 let g:AutoPairsMapCR = 0
 imap <expr><CR> "\<CR>\<Plug>AutoPairsReturn"
 
 
-" NERDTree
+
+""" NERDTree
 let NERDTreeQuitOnOpen = 1          " Quit when opening file
 let NERDTreeAutoDeleteBuffer = 1    " Delete buffer when deleting files
 let NERDTreeCaseSensitiveSort = 1   " Show uppercase first, then lowercase
@@ -31,43 +34,43 @@ let NERDTreeShowHidden = 1          " Show hidden files
 autocmd StdinReadPre * let s:std_in = 1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd VimEnter * wincmd p
+" Close Vim if NERDTree is the last buffer
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 
-" Devicons
+
+""" Devicons
 " Hide [] around icons
 if exists('g:loaded_webdevicons')
     call webdevicons#refresh()
 endif
 
 
-" Syntastic
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_loc_list_height = 4
-let g:syntastic_auto_loc_list = 1
+
+""" Syntastic
+let g:syntastic_always_populate_loc_list = 1    " Fill loc list with errors
+let g:syntastic_loc_list_height = 6             
+let g:syntastic_auto_loc_list = 1               " Open if errors, close if none
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_aggregate_errors = 1
 " C++ options
-let g:syntastic_cpp_checkers = ['gcc', 'cpplint']
 let g:syntastic_cpp_compiler = 'g++'
-let g:syntastic_cpp_compiler_options = '-std=c++11 -Wall -Wextra -pedantic -Wdisabled-optimization -Wlogical-op -Wredundant-decls -Wshadow'
+let g:syntastic_cpp_compiler_options = '-std=c++11 -Wall -Wextra -pedantic -Wdisabled-optimization -Wlogical-op -Wnon-virtual-dtor -Wredundant-decls -Wshadow'
 let g:syntastic_cpp_config_file = '.clang_complete'
-let g:syntastic_cpp_include_dirs = ['include', 'lib', 'src']
+let g:syntastic_cpp_include_dirs = ['include', '../include', 'lib', '../lib', '../src', 'src']
 let g:syntastic_cpp_check_header = 1
-let g:syntastic_cpp_cpplint_exec = 'cpplint.py' 
-let g:syntastic_cpp_cpplint_args = '--filter=-legal/copyright'
+let g:syntastic_cpp_checkers = ['gcc', 'cppcheck']
+let g:syntastic_cpp_cppcheck_args = '--std=c++11 --enable=all'
+let g:syntastic_cpp_cpplint_exec = 'cpplint'
+let g:syntastic_cpp_cpplint_args = '--filter=-legal/copyright,-readability/todo,-whitespace/indent, -whitespace/comment'
 
 
+""" Clang-Format
+let g:clang_format#code_style = 'llvm'
 
-" Clang_complete
-let g:clang_library_path = '/LLVM/bin'
-let g:clang_hl_errors = 0
-let g:clang_complete_macros = 1
-let g:clang_close_preview = 1
-let g:clang_user_options = ' -std=c++11 -Wall -Wextra'
-command! UpdateClangConfig make CC="python ~\.vim\bundle\clang_complete\bin\cc_args.py gcc" CXX="python ~\.vim\bundle\clang_complete\bin\cc_args.py g++" -B
 
 " YouCompleteMe
 let g:ycm_show_diagnostics_ui = 0
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
-let g:ycm_semantic_triggers = { 'cpp,objcpp' : ['->', '.', '::', 're!SDL_', ' re!gl'] }
+let g:ycm_semantic_triggers = { 'cpp,objcpp' : ['->', '.', '::', 're!SDL_', 're!gl', 're!glfw', 're!GLFW_', 're!GL_'] }
