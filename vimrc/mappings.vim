@@ -2,7 +2,6 @@
 let mapleader=","
 
 
-
 """" Movement mappings 
 
 " Move through visual lines
@@ -57,6 +56,11 @@ nnoremap <Leader>q :q<CR>
 
 " Close buffer without closing window
 nmap <silent> <Leader>c :bp<bar>sp<bar>bn<bar>bd<CR>
+
+
+" Yank and Paste from clipboard
+nnoremap <Leader>y "+y
+nnoremap <Leader>p "+p
 
 
 
