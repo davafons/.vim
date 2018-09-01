@@ -6,21 +6,34 @@
 
 
 " ================   General    ====================
+" the
 iab hte the
 iab teh the
 
 
 
 " ================     C++      ====================
+" int
 iab itn int
-iab enld endl
-iab stirng string
-iab mian main
-iab amin main
+" const
 iab cosnt const
-iab defualt default
+" cout
 iab Cout cout
+iab cuot cout
+" default
+iab defualt default
+" endl
+iab enld endl
+iab ednl endl
+" include
+iab icnlude include
+" iostream
 iab iostrema iostream
 iab iosteram iostream
-iab icnlude include
-iab ednl endl
+" main
+iab mian main
+iab amin main
+" return
+iab reutrn return
+" string
+iab stirng string
