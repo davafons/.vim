@@ -1,11 +1,17 @@
-" Spelling erros in vim
+"  +----------------------------------------------+
+"  |                                              |
+"  |               Spelling Errors                |
+"  |                                              |
+"  +----------------------------------------------+
 
 
-" General
+" ================   General    ====================
 iab hte the
 iab teh the
 
-" C++
+
+
+" ================     C++      ====================
 iab itn int
 iab enld endl
 iab stirng string
