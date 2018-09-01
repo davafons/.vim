@@ -28,6 +28,8 @@ set hidden              " Hide buffers instead of closing
 set title               " Show terminal's title
 set backspace=indent,eol,start  " Godmode backspace
 set noerrorbells        " No error beep
+set textwidth=80        " Force wrap lines at 80
+set colorcolumn=81      " Show column limit at line 80
 
 
 

@@ -65,7 +65,6 @@ let g:syntastic_cpp_checkers = ['gcc', 'cppcheck']
 " --- GCC config
 let g:syntastic_cpp_compiler = 'g++'
 let g:syntastic_cpp_compiler_options = '-std=c++11 -Wall -Wextra -pedantic -Wdisabled-optimization -Wlogical-op -Wnon-virtual-dtor -Wredundant-decls -Wshadow'
-let g:syntastic_cpp_config_file = '.clang_complete' " If found, add additional flags
 let g:syntastic_cpp_include_dirs = ['include', '../include', 'lib', '../lib', '../src', 'src']
 let g:syntastic_cpp_check_header = 1
 
@@ -74,7 +73,7 @@ let g:syntastic_cpp_cpplint_exec = 'cpplint'
 let g:syntastic_cpp_cpplint_args = '--filter=-legal/copyright,-readability/todo,-whitespace/indent, -whitespace/comment'
 
 " --- Cppcheck config
-let g:syntastic_cpp_cppcheck_args = '--std=c++11 --enable=all'
+let g:syntastic_cpp_cppcheck_args = '--std=c++11 --enable=all --suppress=unusedFunction'
 
 
 
