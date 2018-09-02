@@ -45,10 +45,9 @@ set history=1000        " Remember more commands and seach history
 set undolevels=1000     " A lot of undo levels
 
 
-
 " ================    Miscelasneous   ====================
-" Don't auto-comment when inserting a newline
-autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+" Don't auto-comment when pressing o or enter
+autocmd FileType * set formatoptions-=ro
 
 " Use glsl syntax highlighting for .vs and .fs files
 autocmd! BufNewFile,BufRead *.vs,*.fs set ft=glsl
