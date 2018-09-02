@@ -1,15 +1,40 @@
-" Spelling erros in vim
+"  +----------------------------------------------+
+"  |                                              |
+"  |               Spelling Errors                |
+"  |                                              |
+"  +----------------------------------------------+
 
 
-" General
+" ================   General    ====================
+" the
 iab hte the
 iab teh the
 iab eahc each
 
-" C++
+
+
+" ================     C++      ====================
+" int
 iab itn int
+" const
+iab cosnt const
+" cout
+iab Cout cout
+iab cuot cout
+" default
+iab defualt default
+" endl
 iab enld endl
-iab stirng string
+iab ednl endl
+" include
+iab icnlude include
+" iostream
+iab iostrema iostream
+iab iosteram iostream
+" main
 iab mian main
+iab amin main
+" return
 iab reutrn return
-iab unsinged unsigned
+" string
+iab stirng string
