@@ -31,6 +31,7 @@ iab icnlude include
 " iostream
 iab iostrema iostream
 iab iosteram iostream
+iab iostrem iostream
 " main
 iab mian main
 iab amin main
