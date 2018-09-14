@@ -17,7 +17,6 @@ set shiftround          " Use multiples of shiftwidth when indenting
 
 
 " ================  UI Configuration  ====================
-set number              " Show line numbers
 set cursorline          " Highlight current line
 set showcmd             " Show as commands are typed
 set wildmenu            " Visual autocomplete for command menu
@@ -30,6 +29,7 @@ set backspace=indent,eol,start  " Godmode backspace
 set noerrorbells        " No error beep
 set textwidth=80        " Force wrap lines at 80
 set colorcolumn=81      " Show column limit at line 80
+set number relativenumber " Hybrid number line
 
 
 

@@ -27,6 +27,7 @@ Plugin 'airblade/vim-gitgutter'         " Show git sign column
 Plugin 'scrooloose/nerdtree'            " Treeview
 Plugin 'Xuyuanp/nerdtree-git-plugin'    " Add git suppor to NerdTree
 Plugin 'ryanoasis/vim-devicons'         " Use icons from NerdFonts
+Plugin 'jeffkreeftmeijer/vim-numbertoggle' " Hybrid number line
 
 
 
