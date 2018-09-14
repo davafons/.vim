@@ -56,8 +56,8 @@ Plugin 'vim-scripts/a.vim'              " Swap between .h and .cpp files
 
 
 " ================ Python       ====================
-Plugin 'vim-scripts/indentpython.vim'   " PEP 8 indentation
 Plugin 'nvie/vim-flake8'                " PEP 8 checking
+Plugin 'Vimjas/vim-python-pep8-indent'
 
 
 
