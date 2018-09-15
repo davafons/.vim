@@ -34,7 +34,16 @@ iab iosteram iostream
 " main
 iab mian main
 iab amin main
+" operator
+iab operaotr operator
 " return
 iab reutrn return
+iab reutnr return
 " string
 iab stirng string
+" template
+iab tempalte template
+iab templte template
+iab teamplte template
+" unsigned
+iab unsgined unsigned
