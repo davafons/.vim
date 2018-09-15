@@ -19,7 +19,7 @@ setlocal smarttab            " Insert tabs according to shiftwidth, not tabstop
 setlocal autoindent          " Enable auto indentation
 setlocal copyindent          " Copy previous indentation on autoindenting
 setlocal shiftround          " Use multiples of shiftwidth when indenting
-setlocal cinoptions+=L0      " Don't deindent when typing std::
+setlocal cinoptions+=L0      " Don't indent when typing std::
 setlocal cinoptions+=g0      " Don't indent private:, public: ... labels
 
 

@@ -43,6 +43,8 @@ set smartcase           " Search lo/up case if no uppercase entered
 " ================       Buffer       ====================
 set history=1000        " Remember more commands and seach history
 set undolevels=1000     " A lot of undo levels
+set backupdir=~/.vim/backup//
+set directory=~/.vim/swp//
 
 
 " ================    Miscelasneous   ====================
