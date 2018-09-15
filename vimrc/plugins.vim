@@ -27,6 +27,7 @@ Plugin 'airblade/vim-gitgutter'         " Show git sign column
 Plugin 'scrooloose/nerdtree'            " Treeview
 Plugin 'Xuyuanp/nerdtree-git-plugin'    " Add git suppor to NerdTree
 Plugin 'ryanoasis/vim-devicons'         " Use icons from NerdFonts
+Plugin 'jeffkreeftmeijer/vim-numbertoggle' " Hybrid number line
 
 
 
@@ -41,7 +42,6 @@ Plugin 'majutsushi/tagbar'              " Indexed tags window
 " ================ Style/Format ====================
 Plugin 'sheerun/vim-polyglot'           " Syntax highlighting pack
 Plugin 'rhysd/vim-clang-format'         " Format with specific coding style
-Plugin 'gyim/vim-boxdraw'               " Plugin for draw boxes
 
 
 
@@ -51,12 +51,13 @@ Plugin 'tpope/vim-surround'             " Mappings to change braces
 Plugin 'tpope/vim-commentary'           " Auto comment with gc
 Plugin 'tpope/vim-repeat'               " Repeat mapppings from plugins
 Plugin 'vim-scripts/a.vim'              " Swap between .h and .cpp files
+Plugin 'junegunn/fzf'
 
 
 
 " ================ Python       ====================
-Plugin 'vim-scripts/indentpython.vim'   " PEP 8 indentation
 Plugin 'nvie/vim-flake8'                " PEP 8 checking
+Plugin 'Vimjas/vim-python-pep8-indent'
 
 
 

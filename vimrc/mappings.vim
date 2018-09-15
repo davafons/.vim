@@ -71,6 +71,9 @@ nnoremap <Leader>p "+p
 "--- Remove trailing spaces
 nnoremap <silent> <F3> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
 
+"--- Esc with C-c
+inoremap <C-c> <Esc>
+
 
 
 " ================   Plugins    ====================
