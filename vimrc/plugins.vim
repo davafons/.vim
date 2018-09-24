@@ -36,6 +36,7 @@ Plugin 'Valloric/YouCompleteMe'         " Automatic completion popup
 Plugin 'scrooloose/syntastic'           " Syntax cheking
 Plugin 'ludovicchabant/vim-gutentags'   " Automatic tags generation
 Plugin 'majutsushi/tagbar'              " Indexed tags window
+Plugin 'janko-m/vim-test'
 
 
 
@@ -56,9 +57,15 @@ Plugin 'junegunn/fzf.vim'
 
 
 
-" ================ Python       ====================
+" ================    Python    ====================
 Plugin 'nvie/vim-flake8'                " PEP 8 checking
 Plugin 'Vimjas/vim-python-pep8-indent'
+
+
+
+" ================    Ruby      ====================
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-rails'
 
 
 

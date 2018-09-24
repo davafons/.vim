@@ -22,7 +22,7 @@ setlocal formatoptions=croql
 
 
 " ================   Mappings   ====================
-nnoremap <buffer> <F5> :exec '!python3' shellescape(@%, 1)<cr>
+nnoremap <buffer> <F5> :exec '!python3' shellescape(@%, 1)<CR>
 
 
 

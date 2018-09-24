@@ -98,16 +98,6 @@ nnoremap <silent> <Leader>t :TagbarToggle<CR>
 nnoremap <silent> <Leader>a :A<CR>
 nnoremap <silent> <Leader>s :AS<CR>
 
-
-" =========== Clang-Format  ===============
-autocmd FileType c,cpp,objc nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
-autocmd Filetype c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
-
-
-" ===========   Syntastic   ===============
-autocmd Filetype c,cpp,objc nnoremap <Leader>cc :SyntasticCheck cpplint<CR>
-
-
 " =========== YouCompleteMe ==============
 nnoremap <Leader>gg :YcmCompleter GoTo<CR>
 nnoremap <Leader>gi :YcmCompleter GoToInclude<CR>

@@ -73,7 +73,12 @@ let g:syntastic_cpp_cpplint_exec = 'cpplint'
 let g:syntastic_cpp_cpplint_args = '--filter=-legal/copyright,-readability/todo,-whitespace/indent, -whitespace/comment'
 
 " --- Cppcheck config
-let g:syntastic_cpp_cppcheck_args = '--std=c++11 --enable=all --suppress=unusedFunction'
+let g:syntastic_cpp_cppcheck_args = '--std=c++11 --language=c++ --enable=all --suppress=unusedFunction'
+
+
+" --- Ruby config
+let g:syntastic_ruby_checkers = ['mri']
+let g:syntasic_ruby_mri_exec = "/usr/bin/ruby"
 
 
 
