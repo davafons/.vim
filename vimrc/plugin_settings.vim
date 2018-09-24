@@ -86,3 +86,8 @@ let g:clang_format#code_style = 'llvm'
 let g:ycm_show_diagnostics_ui = 0    " Let Syntastic do the diagnostics
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 let g:ycm_semantic_triggers = { 'cpp,objcpp' : ['->', '.', '::', 're!SDL_', 're!gl', 're!glfw', 're!GLFW_', 're!GL_'] }
+
+
+
+" ================ YouCompleteMe ====================
+set rtp+=~/.fzf

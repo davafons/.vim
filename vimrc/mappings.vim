@@ -117,3 +117,9 @@ nnoremap <Leader>gt :Ycmcompleter GetType<CR>
 nnoremap <Leader>gp :YcmCompleter GetParent<CR>
 nnoremap <Leader>go :YcmCompleter GetDoc<CR>
 
+" ===========     fzf       ==============
+nnoremap <Leader>bb :Buffers<CR>
+nnoremap <Leader>bf :Files<CR> 
+nnoremap <Leader>bm :Maps<CR>
+nnoremap <Leader>bc :Commits<CR>
+
