@@ -19,10 +19,20 @@ noremap <A-j> gT
 noremap <A-k> gt
 
 "--- Faster window navigation
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+"--- Move windows
+nnoremap <C-w><C-h> <C-w>H
+nnoremap <C-w><C-j> <C-w>J
+nnoremap <C-w><C-k> <C-w>K
+nnoremap <C-w><C-l> <C-w>L
+
+"--- Change window size
+nnoremap <C-w><C-m> <C-w>\| <C-W>_
+nnoremap <C-w><C-e> <C-w>=
 
 "--- Disable key arrows
 map <up> <nop>
@@ -60,20 +70,18 @@ set pastetoggle=<F2>
 "--- Easy quit shortcut
 nnoremap <Leader>q :q<CR>
 
-"--- Close buffer without closing window
-nmap <silent> <Leader>c :bp<bar>sp<bar>bn<bar>bd<CR>
-
-"--- Yank and Paste from clipboard
-nnoremap <Leader>y "+y
-nnoremap <Leader>p "+p
-
-
 "--- Remove trailing spaces
 nnoremap <silent> <F3> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
 
 "--- Esc with C-c
 inoremap <C-c> <Esc>
 
+"--- Move through buffers 
+nmap <Leader>p :bp<CR>
+nmap <Leader>n :bn<CR>
+
+"--- Close buffer without closing window
+nnoremap <silent> <Leader>bd :bp<bar>sp<bar>bn<bar>bd<CR>
 
 
 " ================   Plugins    ====================
