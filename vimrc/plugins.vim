@@ -42,6 +42,7 @@ Plugin 'majutsushi/tagbar'              " Indexed tags window
 " ================ Style/Format ====================
 Plugin 'sheerun/vim-polyglot'           " Syntax highlighting pack
 Plugin 'rhysd/vim-clang-format'         " Format with specific coding style
+Plugin 'ntpeters/vim-better-whitespace' " Highlight trailing whitespaces
 
 
 

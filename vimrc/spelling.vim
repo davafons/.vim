@@ -18,11 +18,13 @@ iab eahc each
 iab itn int
 " const
 iab cosnt const
+iab cnost const
 " cout
 iab Cout cout
 iab cuot cout
 " default
 iab defualt default
+iab defuatl default
 " endl
 iab enld endl
 iab ednl endl

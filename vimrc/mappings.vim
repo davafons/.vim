@@ -15,8 +15,8 @@ nnoremap j gj
 nnoremap k gk
 
 "--- Move through tabs with alt-j, alt-k
-noremap <A-j> gT
-noremap <A-k> gt
+nnoremap <C-j> gT
+nnoremap <C-k> gt
 
 "--- Faster window navigation
 nnoremap <C-h> <C-w>h
@@ -46,8 +46,8 @@ nmap <Leader>d <C-]>
 nmap <Leader>sd g<C-]>
 
 "--- Move to next/prev error
-nnoremap <C-n> :lnext<CR>
-nnoremap <C-p> :lprev<CR>
+noremap <C-n> :lnext<CR>
+noremap <C-p> :lprev<CR>
 
 
 
