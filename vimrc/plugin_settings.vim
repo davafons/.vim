@@ -76,6 +76,10 @@ let g:syntastic_cpp_cpplint_args = '--filter=-legal/copyright,-readability/todo,
 let g:syntastic_cpp_cppcheck_args = '--std=c++11 --language=c++ --enable=all --suppress=unusedFunction'
 
 
+" --- Python config
+let g:syntastic_python_checkers = ['flake8']
+
+
 " --- Ruby config
 let g:syntastic_ruby_checkers = ['mri']
 let g:syntasic_ruby_mri_exec = "/usr/bin/ruby"
