@@ -2,4 +2,4 @@ bundle/
 backup/
 swp/
 *.swp
-tags
+tags*
