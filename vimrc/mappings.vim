@@ -30,15 +30,15 @@ nnoremap <C-w><C-j> <C-w>J
 nnoremap <C-w><C-k> <C-w>K
 nnoremap <C-w><C-l> <C-w>L
 
+"--- Resize windows
+nnoremap <silent> <Up> :resize -2<CR>
+nnoremap <silent> <Down> :resize +2<CR>
+nnoremap <silent> <Left> :vertical resize -2<CR>
+nnoremap <silent> <Right> :vertical resize +2<CR>
+
 "--- Change window size
 nnoremap <C-w><C-m> <C-w>\| <C-W>_
 nnoremap <C-w><C-e> <C-w>=
-
-"--- Disable key arrows
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
 
 "--- [tags] Go to declaration
 nmap <Leader>d <C-]>
