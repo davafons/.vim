@@ -13,7 +13,7 @@ let b:did_ftplugin = 1
 
 
 " ================   Mappings   ====================
-nnoremap <buffer> <F5> :w<CR>:!ruby %<CR>
+nnoremap <buffer> <F5> :w<CR>:!ruby -w %<CR>
 
 
 

@@ -64,7 +64,7 @@ let g:syntastic_cpp_checkers = ['gcc', 'cppcheck']
 
 " --- GCC config
 let g:syntastic_cpp_compiler = 'g++'
-let g:syntastic_cpp_compiler_options = '-std=c++11 -Wall -Wextra -Wnounused-variable -Wno-unknown-pragmas -pedantic -Wdisabled-optimization -Wlogical-op -Wnon-virtual-dtor -Wredundant-decls -Wshadow'
+let g:syntastic_cpp_compiler_options = '-std=c++11 -Wall -Wextra -Wno-unknown-pragmas -pedantic -Wdisabled-optimization -Wlogical-op -Wnon-virtual-dtor -Wredundant-decls -Wshadow'
 let g:syntastic_cpp_include_dirs = ['include', '../include', 'lib', '../lib', '../src', 'src']
 let g:syntastic_cpp_check_header = 1
 
