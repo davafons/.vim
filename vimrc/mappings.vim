@@ -73,10 +73,14 @@ nnoremap <Leader>q :q<CR>
 "--- Remove trailing spaces
 nnoremap <silent> <F3> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
 
+"--- Easy block indentation
+nnoremap <silent> <leader>> >iB
+nnoremap <silent> <leader>< <iB
+
 "--- Esc with C-c
 inoremap <C-c> <Esc>
 
-"--- Move through buffers 
+"--- Move through buffers
 nmap <Leader>p :bp<CR>
 nmap <Leader>n :bn<CR>
 
@@ -109,7 +113,7 @@ nnoremap <Leader>go :YcmCompleter GetDoc<CR>
 
 " ===========     fzf       ==============
 nnoremap <Leader>bb :Buffers<CR>
-nnoremap <Leader>bf :Files<CR> 
+nnoremap <Leader>bf :Files<CR>
 nnoremap <Leader>bm :Maps<CR>
 nnoremap <Leader>bc :Commits<CR>
 

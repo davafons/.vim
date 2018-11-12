@@ -27,9 +27,5 @@ setlocal cinoptions+=g0      " Don't indent private:, public: ... labels
 " ================   Mappings   ====================
 nnoremap <buffer> <F5> :make<CR>
 
-" =========== Clang-Format  ===============
-nnoremap <buffer><Leader>cf :<C-u>ClangFormat<CR>
-vnoremap <buffer><Leader>cf :ClangFormat<CR>
-
 " ===========   Syntastic   ===============
 nnoremap <Leader>cc :SyntasticCheck cpplint<CR>

@@ -64,7 +64,7 @@ let g:syntastic_cpp_checkers = ['gcc', 'cppcheck']
 
 " --- GCC config
 let g:syntastic_cpp_compiler = 'g++'
-let g:syntastic_cpp_compiler_options = '-std=c++11 -Wall -Wextra -Wno-unknown-pragmas -pedantic -Wdisabled-optimization -Wlogical-op -Wnon-virtual-dtor -Wredundant-decls -Wshadow'
+let g:syntastic_cpp_compiler_options = '-std=c++14 -Wall -Wextra -Wno-unknown-pragmas -pedantic -Wdisabled-optimization -Wlogical-op -Wnon-virtual-dtor -Wredundant-decls -Wshadow'
 let g:syntastic_cpp_include_dirs = ['include', '../include', 'lib', '../lib', '../src', 'src']
 let g:syntastic_cpp_check_header = 1
 
@@ -73,7 +73,7 @@ let g:syntastic_cpp_cpplint_exec = 'cpplint'
 let g:syntastic_cpp_cpplint_args = '--filter=-legal/copyright,-readability/todo,-whitespace/indent, -whitespace/comment'
 
 " --- Cppcheck config
-let g:syntastic_cpp_cppcheck_args = '--std=c++11 --language=c++ --enable=all --suppress=unusedFunction'
+let g:syntastic_cpp_cppcheck_args = '--std=c++14 --language=c++ --enable=all --suppress=unusedFunction'
 
 
 " --- Python config
@@ -86,11 +86,6 @@ let g:syntasic_ruby_mri_exec = "/usr/bin/ruby"
 
 
 
-" ================ Clang Format  ====================
-let g:clang_format#code_style = 'llvm'
-
-
-
 " ================ YouCompleteMe ====================
 let g:ycm_show_diagnostics_ui = 0    " Let Syntastic do the diagnostics
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
@@ -98,6 +93,15 @@ let g:ycm_semantic_triggers = {
       \   'cpp,objcpp' : ['->', '.', '::', 're!SDL_', 're!gl', 're!glfw', 're!GLFW_', 're!GL_'],
       \   'ruby'  : ['.', '::']
       \ }
+
+
+
+" ================ Autoformat    ====================
+let g:autoformat_autoindent = 0
+let g:autoformat_retab = 0
+let g:autoformat_remove_trailing_spaces = 0
+let g:formatdef_clang_format = '"clang-format -style=LLVM"'
+let g:formatters_cpp = ['clang_format']
 
 
 

@@ -41,9 +41,8 @@ Plugin 'janko-m/vim-test'
 
 
 " ================ Style/Format ====================
-Plugin 'Chiel92/vim-autoformat'         " Autoformatting using external tools
 Plugin 'sheerun/vim-polyglot'           " Syntax highlighting pack
-Plugin 'rhysd/vim-clang-format'         " Format with specific coding style
+Plugin 'Chiel92/vim-autoformat'         " Autoformatting using external tools
 Plugin 'ntpeters/vim-better-whitespace' " Highlight trailing whitespaces
 
 
