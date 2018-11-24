@@ -28,6 +28,8 @@ iab defuatl default
 " endl
 iab enld endl
 iab ednl endl
+" float
+iab flaot float
 " include
 iab icnlude include
 " iostream
