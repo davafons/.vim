@@ -32,3 +32,7 @@ source ~/.vim/vimrc/spelling.vim
 
 " ---> Ruby
 " ftplugin/ruby.vim
+
+" ---> Web Dev
+" ftplugin/html.vim
+

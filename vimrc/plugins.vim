@@ -57,13 +57,13 @@ Plugin 'junegunn/fzf.vim'
 
 
 
-" ================    Python    ====================
+" ================ Python       ====================
 Plugin 'nvie/vim-flake8'                " PEP 8 checking
 Plugin 'Vimjas/vim-python-pep8-indent'
 
 
 
-" ================    Ruby      ====================
+" ================ Ruby         ====================
 Plugin 'vim-ruby/vim-ruby'
 Plugin 'tpope/vim-rails'
 
