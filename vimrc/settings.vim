@@ -50,6 +50,9 @@ set clipboard=unnamed   " Use system clipboard
 
 
 " ================    Miscelasneous   ====================
+
+"Default omnicomplete function
+set omnifunc=syntaxcomplete#Complete
 " Don't auto-comment when pressing o or enter
 autocmd FileType * set formatoptions-=ro
 
