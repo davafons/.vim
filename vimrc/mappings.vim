@@ -119,3 +119,6 @@ nnoremap <Leader>bc :Commits<CR>
 
 " ===========  Autoformat   ==============
 nnoremap <F4> :Autoformat<CR>
+
+" ================ indent-guides =========
+nnoremap <Leader>ig :IndentGuidesToggle<CR>
