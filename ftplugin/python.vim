@@ -15,6 +15,7 @@ let b:did_ftplugin = 1
 " ================ Indentation  ====================
 setlocal tabstop=4
 setlocal shiftwidth=4
+setlocal sts=4
 setlocal expandtab
 setlocal autoindent
 setlocal formatoptions=croql

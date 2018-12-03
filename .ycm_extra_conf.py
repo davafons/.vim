@@ -1,7 +1,7 @@
 import os
 import os.path
-import fnmatch
-import logging import ycm_core import re
+import logging
+import ycm_core
 
 BASE_FLAGS = [
         '-Wall',
