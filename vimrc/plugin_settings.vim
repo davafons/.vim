@@ -105,5 +105,12 @@ let g:formatters_cpp = ['clang_format']
 
 
 
-" ================ YouCompleteMe ====================
+" ================ fzf           ====================
 set rtp+=~/.fzf
+
+
+
+" ================ indent-guides ====================
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=8
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=0

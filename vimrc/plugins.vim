@@ -44,6 +44,7 @@ Plugin 'janko-m/vim-test'
 Plugin 'sheerun/vim-polyglot'           " Syntax highlighting pack
 Plugin 'Chiel92/vim-autoformat'         " Autoformatting using external tools
 Plugin 'ntpeters/vim-better-whitespace' " Highlight trailing whitespaces
+Plugin 'nathanaelkane/vim-indent-guides' "Show indent guides
 
 
 
