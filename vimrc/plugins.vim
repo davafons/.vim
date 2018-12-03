@@ -59,8 +59,6 @@ Plugin 'junegunn/fzf.vim'
 
 
 " ================ Python       ====================
-Plugin 'nvie/vim-flake8'                " PEP 8 checking
-Plugin 'Vimjas/vim-python-pep8-indent'
 
 
 
