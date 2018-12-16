@@ -33,6 +33,9 @@ source ~/.vim/vimrc/spelling.vim
 " ---> Ruby
 " ftplugin/ruby.vim
 
+" ---> Prolog
+" ftplugin/prolog.vim
+
 " ---> Web Dev
 " ftplugin/html.vim
 

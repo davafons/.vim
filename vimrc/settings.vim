@@ -58,6 +58,3 @@ autocmd FileType * set formatoptions-=ro
 
 " Use glsl syntax highlighting for .vs and .fs files
 autocmd! BufNewFile,BufRead *.vs,*.fs set ft=glsl
-
-" Use prolog syntax highlighting for .pl files (Instead of pearl)
-autocmd! BufNewFile,BufREad *.pl set ft=prolog
