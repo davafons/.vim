@@ -45,7 +45,7 @@ set history=1000        " Remember more commands and seach history
 set undolevels=1000     " A lot of undo levels
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swp//
-set clipboard=unnamed   " Use system clipboard
+set clipboard=unnamedplus   " Use system clipboard
 
 
 
