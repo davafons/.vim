@@ -12,4 +12,4 @@ set termguicolors
 
 " ================  Colorscheme  ====================
 set background=dark
-colorscheme solarized8
+silent! colorscheme solarized8

@@ -38,7 +38,9 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 
 " ================   NeoMake     ====================
-call neomake#configure#automake('rw')
+if exists('*neomake#configure#automake')
+  call neomake#configure#automake('rw')
+endif
 
 let g:neomake_open_list = 2
 
