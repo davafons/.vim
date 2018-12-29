@@ -3,6 +3,6 @@ Personal vim/nvim configuration for Linux
 
 ## Install
 ```
-cd .vim
+cd ~/.vim
 make install
 ```
