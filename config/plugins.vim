@@ -34,7 +34,7 @@ Plug 'neomake/neomake'                      " Asynchronous linting
 Plug 'majutsushi/tagbar'                    " Tags window
 Plug 'xolox/vim-easytags'                   " ctags syntax highlighter
 Plug 'xolox/vim-misc'                       " Helper plugin used by easytags
-Plug 'jsfaint/gen_tags.vim'                 " gtags generation and cscope search
+Plug 'jsfaint/gen_tags.vim', {'do': 'make gtags -C ~/.vim/'}
 
 
 
