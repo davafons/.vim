@@ -13,7 +13,9 @@ ifeq (, $(shell which curl))
 endif
 
 gtags:
+ifeq(, $(shell which gtags))
 	curl -L tamacom.com/global/global-6.6.3.tar.gz -o /tmp/global-6.6.3.tar.gz
 	tar xzf /tmp/global-6.6.3.tar.gz -C /tmp
 	cd /tmp/global-6.6.3 && ./configure && make && sudo make install
+endif
 
