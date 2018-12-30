@@ -37,6 +37,11 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 
 
+" ================ Buftabline    ====================
+let g:buftabline_show = 1
+
+
+
 " ================   NeoMake     ====================
 if exists('*neomake#configure#automake')
   call neomake#configure#automake('rw')
@@ -48,15 +53,6 @@ let g:neomake_open_list = 2
 let g:neomake_cpp_clang_maker = {
     \ 'args': ['-std=c++17', '-Wall', '-Wextra']
     \ }
-
-
-
-" ================   Deoplete    ====================
-let g:deoplete#enable_at_startup = 1
-
-" --- Clang
-let g:deoplete#sources#clang#libclang_path = '/usr/lib/x86_64-linux-gnu/libclang.so'
-let g:deoplete#sources#clang#clang_header = '/usr/include/clang'
 
 
 

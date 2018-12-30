@@ -45,6 +45,9 @@ nmap <Leader>sd g<C-]>
 noremap <C-n> :lnext<CR>
 noremap <C-p> :lprev<CR>
 
+"--- Move to next/prev buffer
+nmap H :bprev<CR>
+nmap L :bnext<CR>
 
 
 " ================  Shortcuts   ====================
