@@ -34,6 +34,11 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 
 
+" ================ Buftabline    ====================
+let g:buftabline_show = 1
+
+
+
 " ================   NeoMake     ====================
 if exists('*neomake#configure#automake')
   call neomake#configure#automake('rw')

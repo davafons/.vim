@@ -15,18 +15,19 @@ Plug 'lifepillar/vim-solarized8'            " Solarized dark theme
 
 
 " ================ Interface    ====================
-Plug 'itchyny/lightline.vim'
+Plug 'itchyny/lightline.vim'                " Status bar for vim
 Plug 'airblade/vim-gitgutter'               " Show git sign column
 Plug 'scrooloose/nerdtree'                  " Folder Tree view
 Plug 'ryanoasis/vim-devicons'               " Show icons in NerdTree
 Plug 'jeffkreeftmeijer/vim-numbertoggle'    " Hybrid number line
-Plug 'romainl/vim-qf'
+Plug 'romainl/vim-qf'                       " Better quickfix behaviour
 
 
 
 " ================ Lint/Compl   ====================
 Plug 'Valloric/YouCompleteMe', {'do': './install.py --clang-completer'}
 Plug 'neomake/neomake'                      " Asynchronous linting
+Plug 'ap/vim-buftabline'
 
 
 

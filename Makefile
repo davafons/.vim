@@ -8,14 +8,19 @@ install: curl
 
 curl:
 ifeq (, $(shell which curl))
-	@echo "Couldn't locate curl, installing wth 'sudo apt install curl'"
+	@echo "Couldn't locate curl, installing wth 'sudo apt install curl'..."
 	sudo apt install curl
+else
+	@echo "curl is already installed! Doing nothing."
 endif
 
 gtags:
-ifeq(, $(shell which gtags))
+ifeq (, $(shell which gtags))
+	@echo "Couldn't locate gtags, Downloading to /tmp and installing...'"
 	curl -L tamacom.com/global/global-6.6.3.tar.gz -o /tmp/global-6.6.3.tar.gz
 	tar xzf /tmp/global-6.6.3.tar.gz -C /tmp
 	cd /tmp/global-6.6.3 && ./configure && make && sudo make install
+else
+	@echo "gtags is already installed! Doing nothing."
 endif
 
