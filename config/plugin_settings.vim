@@ -12,9 +12,6 @@ let g:lightline = {
   \   'left': [ [ 'mode', 'paste' ],
   \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
   \ },
-  \ 'component_function': {
-  \   'gitbranch': 'fugitive#head'
-  \ },
 \ }
 
 
@@ -48,15 +45,6 @@ let g:neomake_open_list = 2
 let g:neomake_cpp_clang_maker = {
     \ 'args': ['-std=c++17', '-Wall', '-Wextra']
     \ }
-
-
-
-" ================   Deoplete    ====================
-let g:deoplete#enable_at_startup = 1
-
-" --- Clang
-let g:deoplete#sources#clang#libclang_path = '/usr/lib/x86_64-linux-gnu/libclang.so'
-let g:deoplete#sources#clang#clang_header = '/usr/include/clang'
 
 
 
