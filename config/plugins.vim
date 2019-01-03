@@ -55,5 +55,7 @@ Plug 'tpope/vim-repeat'                     " Repeat mapppings from plugins
 Plug 'vim-scripts/a.vim'                    " Swap between .h and .cpp files
 
 
+Plug 'adimit/prolog.vim'
+
 
 call plug#end()
