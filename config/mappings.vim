@@ -36,19 +36,18 @@ nnoremap <silent> <Right> :vertical resize +2<CR>
 nnoremap <C-w><C-m> <C-w>\| <C-W>_
 nnoremap <C-w><C-e> <C-w>=
 
-"--- [tags] Go to declaration
+"--- Go to Tag
 nmap <Leader>d <C-]>
-"--- [tags] Go to definition
-nmap <Leader>sd g<C-]>
 
 "--- Move to next/prev error
 noremap <C-n> :lnext<CR>
 noremap <C-p> :lprev<CR>
 
 "--- Move to next/prev buffer
-nmap H :bprev<CR>
-nmap L :bnext<CR>
-
+execute "set <M-j>=\ej"
+execute "set <M-k>=\ek"
+nnoremap <M-j> :bprev<CR>
+nnoremap <M-k> :bnext<CR>
 
 " ================  Shortcuts   ====================
 
