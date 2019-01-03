@@ -91,3 +91,10 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=0
 let g:qf_auto_open_quickfix = 0
 let g:qf_auto_open_loclist = 0
 let g:qf_loclist_window_bottom = 0
+
+
+
+" ================ vim_qf        ====================
+let g:viewdoc_only = 1
+let g:viewdoc_openempty = 0
+let g:viewdoc_open = "new"

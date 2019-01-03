@@ -27,7 +27,7 @@ Plug 'romainl/vim-qf'                       " Better quickfix behaviour
 " ================ Lint/Compl   ====================
 Plug 'Valloric/YouCompleteMe', {'do': './install.py --clang-completer'}
 Plug 'neomake/neomake'                      " Asynchronous linting
-Plug 'ap/vim-buftabline'
+Plug 'ap/vim-buftabline'                    " Show buffers as a tabline
 
 
 
