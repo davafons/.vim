@@ -17,6 +17,9 @@ endif
 gtags:
 ifeq (, $(shell which gtags))
 	@echo "Couldn't locate gtags, Downloading to /tmp and installing...'"
+	sudo apt install libncurses5-dev
+	sudo apt install cscope
+	sudo apt install exuberant-ctags
 	curl -L tamacom.com/global/global-6.6.3.tar.gz -o /tmp/global-6.6.3.tar.gz
 	tar xzf /tmp/global-6.6.3.tar.gz -C /tmp
 	cd /tmp/global-6.6.3 && ./configure && make && sudo make install
