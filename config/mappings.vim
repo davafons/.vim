@@ -65,8 +65,8 @@ nnoremap <silent> <Leader><space> :nohlsearch<CR>
 "--- Change to pastemode
 set pastetoggle=<F2>
 
-"--- Easy quit shortcut
-nnoremap <Leader>q :q<CR>
+"--- Easy delete buffer
+nnoremap <Leader>q :bd<CR>
 
 "--- Remove trailing spaces
 nnoremap <silent> <F3> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
