@@ -40,9 +40,7 @@ let g:buftabline_show = 1
 
 
 " ================   NeoMake     ====================
-if exists('*neomake#configure#automake')
-  call neomake#configure#automake('rw')
-endif
+call neomake#configure#automake('rw')
 
 let g:neomake_open_list = 2
 
@@ -56,7 +54,7 @@ let g:neomake_cpp_clang_maker = {
 " ================ Gen_tags      ====================
 let g:gen_tags#ctags_auto_gen = 1
 let g:gen_tags#ctags_opts = '--fields=+l --c-kinds=+px --c++-kinds=+px'
-let g:gen_tags#gtags_auto_gen = 1
+let g:gen_tags#gtags_auto_gen = 0
 let g:gen_tags#use_cache_dir = 0
 let g:gen_tags#gtags_default_map = 0
 
