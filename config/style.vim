@@ -6,7 +6,9 @@
 
 
 " ================   Terminal    ====================
-set termguicolors
+if v:version >= 800
+  set termguicolors
+endif
 
 
 

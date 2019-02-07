@@ -25,7 +25,7 @@ Plug 'romainl/vim-qf'                       " Better quickfix behaviour
 
 
 " ================ Lint/Compl   ====================
-Plug 'Valloric/YouCompleteMe', {'do': 'python3 install.py --java-completer --clang-completer'}
+Plug 'Valloric/YouCompleteMe', {'do': './install.py --clang-completer --java-completer'}
 Plug 'neomake/neomake'                      " Asynchronous linting
 Plug 'ap/vim-buftabline'                    " Show buffers as a tabline
 
@@ -35,7 +35,7 @@ Plug 'ap/vim-buftabline'                    " Show buffers as a tabline
 Plug 'majutsushi/tagbar'                    " Tags window
 Plug 'xolox/vim-easytags'                   " ctags syntax highlighter
 Plug 'xolox/vim-misc'                       " Helper plugin used by easytags
-Plug 'jsfaint/gen_tags.vim', {'do': 'make gtags -C ~/.vim/'}
+" Plug 'jsfaint/gen_tags.vim', {'do': 'make gtags -C ~/.vim/'}
 
 
 
