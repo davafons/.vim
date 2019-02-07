@@ -1,6 +1,6 @@
 .PHONY: install, curl, gtags
 
-install: curl
+install: dependencies curl gtags
 	@echo 'source ~/.vim/init.vim' > ~/.vimrc
 	@echo 'Checking if curl is installed...'
 	@echo 'Created ~/.vimrc file. Installing pluggins...'
@@ -27,3 +27,7 @@ else
 	@echo "gtags is already installed! Doing nothing."
 endif
 
+
+dependencies:
+	@echo "Installing required dependencies..."
+	sudo apt install cmake
