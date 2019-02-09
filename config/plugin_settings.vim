@@ -49,6 +49,11 @@ let g:neomake_cpp_clang_maker = {
     \ 'args': ['-std=c++17', '-Wall', '-Wextra']
     \ }
 
+" --- Pylint
+let g:neomake_python_pylint_maker = {
+    \ 'args': ['docstring-min-length=10']
+    \ }
+
 
 
 " ================ Gen_tags      ====================
