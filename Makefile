@@ -1,10 +1,21 @@
 .PHONY: install, curl, gtags
 
-install: dependencies curl gtags
+install: dependencies simple
+
+
+simple:
 	@echo 'source ~/.vim/init.vim' > ~/.vimrc
 	@echo 'Checking if curl is installed...'
 	@echo 'Created ~/.vimrc file. Installing pluggins...'
 	vim +'PlugInstall --sync'
+
+
+dependencies: curl gtags
+	@echo "Installing required dependencies..."
+ifeq (, $(shell which cmake))
+	sudo apt install cmake
+endif
+
 
 curl:
 ifeq (, $(shell which curl))
@@ -13,6 +24,7 @@ ifeq (, $(shell which curl))
 else
 	@echo "curl is already installed! Doing nothing."
 endif
+
 
 gtags:
 ifeq (, $(shell which gtags))
@@ -27,7 +39,3 @@ else
 	@echo "gtags is already installed! Doing nothing."
 endif
 
-
-dependencies:
-	@echo "Installing required dependencies..."
-	sudo apt install cmake
