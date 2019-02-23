@@ -40,23 +40,29 @@ let g:buftabline_show = 1
 
 
 " ================   NeoMake     ====================
-call neomake#configure#automake('rw')
+" call neomake#configure#automake('rw')
 
-let g:neomake_open_list = 2
+" let g:neomake_open_list = 2
 
-" --- Clang
-let g:neomake_cpp_clang_maker = {
-    \ 'args': ['-std=c++17', '-Wall', '-Wextra']
-    \ }
+" " --- Clang
+" let g:neomake_cpp_clang_maker = {
+"     \ 'args': ['-std=c++17', '-Wall', '-Wextra']
+"     \ }
 
-" --- Pylint
-let g:neomake_python_pylint_maker = {
-    \ 'args': ['docstring-min-length=10']
-    \ }
+" " --- Pylint
+" let g:neomake_python_pylint_maker = {
+"     \ 'args': ['docstring-min-length=10']
+"     \ }
 
+"  ================ ALE           ====================
+let g:ale_open_list = 1
+let g:ale_list_window_size = 7
 
+let g:ale_linters = {
+      \ 'java': ['javac'],
+      \ }
 
-" ================ Gen_tags      ====================
+"  ================ Gen_tags      ====================
 let g:gen_tags#ctags_auto_gen = 1
 let g:gen_tags#ctags_opts = '--fields=+l --c-kinds=+px --c++-kinds=+px'
 let g:gen_tags#gtags_auto_gen = 0
