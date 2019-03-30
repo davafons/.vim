@@ -39,10 +39,6 @@ nnoremap <C-w><C-e> <C-w>=
 "--- Go to Tag
 nmap <Leader>d <C-]>
 
-"--- Move to next/prev error
-noremap <C-n> :lnext<CR>
-noremap <C-p> :lprev<CR>
-
 "--- Move to next/prev buffer
 execute "set <M-j>=\ej"
 execute "set <M-k>=\ek"
@@ -104,6 +100,8 @@ nnoremap <silent> <Leader>s :AS<CR>
 
 " ===========  ALEFix       ==============
 nnoremap <F4> :ALEFix<CR>
+nmap <silent> <C-n> <Plug>(ale_next_wrap)
+nmap <silent> <C-p> <Plug>(ale_previous_wrap)
 
 " ===========  indent-gui   ==============
 nnoremap <Leader>ig :IndentGuidesToggle<CR>
