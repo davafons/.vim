@@ -39,28 +39,25 @@ let g:buftabline_show = 1
 
 
 
-" ================   NeoMake     ====================
-" call neomake#configure#automake('rw')
-
-" let g:neomake_open_list = 2
-
-" " --- Clang
-" let g:neomake_cpp_clang_maker = {
-"     \ 'args': ['-std=c++17', '-Wall', '-Wextra']
-"     \ }
-
-" " --- Pylint
-" let g:neomake_python_pylint_maker = {
-"     \ 'args': ['docstring-min-length=10']
-"     \ }
-
 "  ================ ALE           ====================
 let g:ale_open_list = 1
 let g:ale_list_window_size = 7
 
+let g:ale_fix_on_save = 1
+
 let g:ale_linters = {
       \ 'java': ['javac'],
+      \ 'python': ['mypy', 'flake8', 'pylint', 'bandit'],
       \ }
+
+let g:ale_fixers = {
+      \ 'python': ['yapf', 'isort'],
+      \ 'json': ['fixjson'],
+      \ }
+
+let g:ale_echo_msg_format = '[%linter%] %s'
+
+
 
 "  ================ Gen_tags      ====================
 let g:gen_tags#ctags_auto_gen = 1
@@ -100,10 +97,3 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=0
 let g:qf_auto_open_quickfix = 0
 let g:qf_auto_open_loclist = 0
 let g:qf_loclist_window_bottom = 0
-
-
-
-" ================ vim_qf        ====================
-let g:viewdoc_only = 1
-let g:viewdoc_openempty = 0
-let g:viewdoc_open = "new"

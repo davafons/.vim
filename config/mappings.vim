@@ -102,8 +102,8 @@ nnoremap <silent> <Leader>t :TagbarToggle<CR>
 nnoremap <silent> <Leader>a :A<CR>
 nnoremap <silent> <Leader>s :AS<CR>
 
-" ===========  Autoformat   ==============
-nnoremap <F4> :Autoformat<CR>
+" ===========  ALEFix       ==============
+nnoremap <F4> :ALEFix<CR>
 
 " ===========  indent-gui   ==============
 nnoremap <Leader>ig :IndentGuidesToggle<CR>
