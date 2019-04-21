@@ -18,3 +18,4 @@ source ~/.vim/config/mappings.vim
 " ftplugin/java.vim
 " ftplugin/prolog.vim
 " ftplugin/python.vim
+" ftplugin/javascript.vim

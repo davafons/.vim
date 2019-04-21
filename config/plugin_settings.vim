@@ -41,20 +41,20 @@ let g:buftabline_show = 1
 
 "  ================ ALE           ====================
 let g:ale_open_list = 1
+let g:ale_set_loclist = 0
+let g:ale_set_quickfix = 1
 let g:ale_list_window_size = 7
 
 let g:ale_lint_on_text_changed = '0'
 
-let g:ale_set_loclist = 0
-let g:ale_set_quickfix = 1
-
 let g:ale_linters = {
       \ 'java': ['javac'],
-      \ 'python': ['mypy', 'flake8', 'pylint', 'bandit'],
+      \ 'python': ['mypy --ignore-missing-imports', 'flake8', 'pylint', 'bandit'],
+      \ 'javascript': ['eslint']
       \ }
 
 let g:ale_fixers = {
-      \ 'python': ['yapf', 'isort'],
+      \ 'python': ['black', 'isort'],
       \ 'cpp': ['clang-format'],
       \ 'json': ['fixjson'],
       \ 'sh': ['shfmt'],

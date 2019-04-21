@@ -49,14 +49,17 @@ Plug 'nathanaelkane/vim-indent-guides'      " Show indent guides
 
 
 " ================ Mappings     ====================
-Plug 'cohama/lexima.vim'                 " Auto pair braces
+Plug 'cohama/lexima.vim'                    " Auto pair braces
 Plug 'tpope/vim-surround'                   " Mappings to change braces
-Plug 'tpope/vim-commentary'                 " Autocomment with gc
+Plug 'tomtom/tcomment_vim'                  " Autocomment with gc
 Plug 'tpope/vim-repeat'                     " Repeat mapppings from plugins
 Plug 'vim-scripts/a.vim'                    " Swap between .h and .cpp files
 
 
+
+" ================ Langs        ====================
 Plug 'adimit/prolog.vim'
+Plug 'plytophogy/vim-virtualenv'
 
 
 call plug#end()

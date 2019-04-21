@@ -1,6 +1,6 @@
 "  +----------------------------------------------+
 "  |                                              |
-"  |                   Python                     |
+"  |                  Javascript                  |
 "  |                                              |
 "  +----------------------------------------------+
 
@@ -10,9 +10,7 @@ endif
 
 let b:did_ftplugin = 1
 
-setlocal tabstop=4           " Number of visual spaces per TAB
-setlocal shiftwidth=4        " When indenting with '>', use 4 spaces width
-
 
 " ================   Mappings   ====================
-nnoremap <buffer> <F5> :!python3 %<CR>
+nnoremap <buffer> <F5> :!node %<CR>
+nnoremap <buffer> <F6> :!npm test<CR>
