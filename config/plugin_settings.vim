@@ -49,7 +49,7 @@ let g:ale_lint_on_text_changed = '0'
 
 let g:ale_linters = {
       \ 'java': ['javac'],
-      \ 'python': ['mypy --ignore-missing-imports', 'flake8', 'bandit'],
+      \ 'python': ['mypy --ignore-missing-imports', 'flake8', 'pylint'],
       \ 'javascript': ['eslint']
       \ }
 
@@ -58,7 +58,7 @@ let g:ale_fixers = {
       \ 'cpp': ['clang-format'],
       \ 'json': ['fixjson'],
       \ 'sh': ['shfmt'],
-      \ 'javascript': ['eslint'],
+      \ 'javascript': ['eslint', 'prettier'],
       \ 'java': ['google_java_format'],
       \ }
 
