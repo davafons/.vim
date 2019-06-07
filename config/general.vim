@@ -47,4 +47,6 @@ set undolevels=1000     " A lot of undo levels
 
 
 " ================       Files        ====================
-autocmd! BufNewFile,BufRead *.pl set ft=prolog
+au BufRead,BufNewFile *.pl set filetype=prolog
+au BufRead,BufNewFile *.egg set filetype=egg
+

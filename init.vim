@@ -19,7 +19,3 @@ source ~/.vim/config/mappings.vim
 " ftplugin/prolog.vim
 " ftplugin/python.vim
 " ftplugin/javascript.vim
-
-
-au BufRead,BufNewFile *.egg set filetype=egg
-
