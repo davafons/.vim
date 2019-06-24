@@ -49,4 +49,3 @@ set undolevels=1000     " A lot of undo levels
 " ================       Files        ====================
 au BufRead,BufNewFile *.pl set filetype=prolog
 au BufRead,BufNewFile *.egg set filetype=egg
-

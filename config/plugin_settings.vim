@@ -73,6 +73,9 @@ let g:gen_tags#gtags_auto_gen = 0
 let g:gen_tags#use_cache_dir = 0
 let g:gen_tags#gtags_default_map = 0
 
+" Supress warning `version 0.0.0`
+let g:easytags_suppress_ctags_warning = 1
+
 
 
 " ================ Easytags      ====================
@@ -104,3 +107,10 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=0
 let g:qf_auto_open_quickfix = 0
 let g:qf_auto_open_loclist = 0
 let g:qf_loclist_window_bottom = 0
+
+
+" ================ YouCompleteMe ====================
+
+" Fix for `PyUnicode_FromFormat` error on Arch using a venv
+set pythonthreehome=
+set pythonthreedll=
