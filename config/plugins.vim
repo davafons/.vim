@@ -25,18 +25,18 @@ Plug 'romainl/vim-qf'                       " Better quickfix behaviour
 
 
 " ================ Lint/Compl   ====================
-Plug 'Valloric/YouCompleteMe', {'do': './install.py --clang-completer --java-completer --js-completer'}
+" Plug 'Valloric/YouCompleteMe', {'do': './install.py --clang-completer --java-completer --js-completer'}
 Plug 'ap/vim-buftabline'                    " Show buffers as a tabline
-Plug 'w0rp/ale'                             " Linting and Fixer
-Plug 'janko-m/vim-test'                     " Vim wrapper for running tests
-Plug 'tpope/vim-dispatch'
+" Plug 'w0rp/ale'                             " Linting and Fixer
+" Plug 'janko-m/vim-test'                     " Vim wrapper for running tests
+" Plug 'tpope/vim-dispatch'
 
 
 
 " ================ Tags         ====================
-Plug 'majutsushi/tagbar'                    " Tags window
-Plug 'xolox/vim-easytags'                   " ctags syntax highlighter
-Plug 'xolox/vim-misc'                       " Helper plugin used by easytags
+" Plug 'majutsushi/tagbar'                    " Tags window
+" Plug 'xolox/vim-easytags'                   " ctags syntax highlighter
+" Plug 'xolox/vim-misc'                       " Helper plugin used by easytags
 
 
 
@@ -58,8 +58,8 @@ Plug 'vim-scripts/a.vim'                    " Swap between .h and .cpp files
 
 
 " ================ Langs        ====================
-Plug 'adimit/prolog.vim'
-Plug 'plytophogy/vim-virtualenv'
+" Plug 'adimit/prolog.vim'
+" Plug 'plytophogy/vim-virtualenv'
 
 
 call plug#end()
