@@ -50,7 +50,8 @@ let g:ale_lint_on_text_changed = '0'
 let g:ale_linters = {
       \ 'java': ['javac'],
       \ 'python': ['mypy --ignore-missing-imports', 'flake8', 'pylint'],
-      \ 'javascript': ['eslint']
+      \ 'javascript': ['eslint'],
+      \ 'cpp': ['clang']
       \ }
 
 let g:ale_fixers = {
@@ -109,8 +110,12 @@ let g:qf_auto_open_loclist = 0
 let g:qf_loclist_window_bottom = 0
 
 
-" ================ YouCompleteMe ====================
 
-" Fix for `PyUnicode_FromFormat` error on Arch using a venv
-set pythonthreehome=
-set pythonthreedll=
+" ================ Neomake       ====================
+call neomake#configure#automake('w')
+let g:neomake_open_list = 2
+
+let g:neomake_cpp_enable_makers = ['clang']
+let g:neomake_cpp_clang_maker = {
+  \ 'exe': 'clang-tidy',
+  \ }

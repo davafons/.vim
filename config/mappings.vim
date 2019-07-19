@@ -40,10 +40,15 @@ nnoremap <C-w><C-e> <C-w>=
 nmap <Leader>d <C-]>
 
 "--- Move to next/prev buffer
-execute "set <M-j>=\ej"
-execute "set <M-k>=\ek"
-nnoremap <M-j> :bprev<CR>
-nnoremap <M-k> :bnext<CR>
+if has("nvim")
+  nnoremap <A-j> :bprev<CR>
+  nnoremap <A-k> :bnext<CR>
+else
+  execute "set <M-j>=\ej"
+  execute "set <M-k>=\ek"
+  nnoremap <M-j> :bprev<CR>
+  nnoremap <M-k> :bnext<CR>
+endif
 
 " ================  Shortcuts   ====================
 
@@ -100,8 +105,12 @@ nnoremap <silent> <Leader>s :AS<CR>
 
 " ===========  ALEFix       ==============
 nnoremap <F4> :ALEFix<CR>
-nmap <silent> <C-n> <Plug>(ale_next_wrap)
-nmap <silent> <C-p> <Plug>(ale_previous_wrap)
+" nmap <silent> <C-n> <Plug>(ale_next_wrap)
+" nmap <silent> <C-p> <Plug>(ale_previous_wrap)
+
+" ===========  ALEFix       ==============
+nmap <silent> <C-n> :lnext<CR>
+nmap <silent> <C-p> :lprev<CR>
 
 " ===========  indent-gui   ==============
 nnoremap <Leader>ig :IndentGuidesToggle<CR>
