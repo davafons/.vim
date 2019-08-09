@@ -59,7 +59,7 @@ let g:ale_fixers = {
       \ 'cpp': ['clang-format'],
       \ 'json': ['fixjson'],
       \ 'sh': ['shfmt'],
-      \ 'javascript': ['eslint', 'prettier'],
+      \ 'javascript': ['prettier'],
       \ 'java': ['google_java_format'],
       \ }
 
@@ -112,10 +112,18 @@ let g:qf_loclist_window_bottom = 0
 
 
 " ================ Neomake       ====================
-call neomake#configure#automake('w')
+" call neomake#configure#automake('w')
 let g:neomake_open_list = 2
 
 let g:neomake_cpp_enable_makers = ['clang']
 let g:neomake_cpp_clang_maker = {
   \ 'exe': 'clang-tidy',
   \ }
+
+
+
+" ================ YouCompleteMe ====================
+let g:ycm_semantic_triggers = {
+      \   'c,cpp,cuda,objcpp': ['->', '.', '::', 're!cuda', 're!SDL_', 're!gl', 're!glfw', 're!GLFW_', 're!GL_'],
+      \   'ruby'  : ['.', '::']
+      \ }

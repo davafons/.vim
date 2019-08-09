@@ -3,6 +3,7 @@
 "  |            Vim Configuration File            |
 "  |                                              |
 "  +----------------------------------------------+
+filetype plugin on
 
 
 " ================    Configuration   ====================
