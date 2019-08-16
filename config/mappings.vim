@@ -50,6 +50,17 @@ else
   nnoremap <M-k> :bnext<CR>
 endif
 
+"--- Move to buffer using number
+nnoremap <Leader>1 :buffer 1<CR>
+nnoremap <Leader>2 :buffer 2<CR>
+nnoremap <Leader>3 :buffer 3<CR>
+nnoremap <Leader>4 :buffer 4<CR>
+nnoremap <Leader>5 :buffer 5<CR>
+nnoremap <Leader>6 :buffer 6<CR>
+nnoremap <Leader>7 :buffer 7<CR>
+nnoremap <Leader>8 :buffer 8<CR>
+nnoremap <Leader>9 :buffer 9<CR>
+
 " ================  Shortcuts   ====================
 
 "--- Save with ctrl+s
@@ -86,6 +97,11 @@ nmap <Leader>n :bn<CR>
 "--- Use system clipboard with leader
 nnoremap <Leader>y "+y
 nnoremap <Leader>p "+p
+
+
+"--- Shortcuts for split window
+nnoremap <silent> <Leader>l :vsplit<CR>
+nnoremap <silent> <Leader>L :split<CR>
 
 
 
