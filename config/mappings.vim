@@ -95,8 +95,10 @@ nmap <Leader>p :bp<CR>
 nmap <Leader>n :bn<CR>
 
 "--- Use system clipboard with leader
-nnoremap <Leader>y "+y
-nnoremap <Leader>p "+p
+if has("clipboard")
+  noremap <Leader>y "+y
+  noremap <Leader>p "+p
+endif
 
 
 "--- Shortcuts for split window
