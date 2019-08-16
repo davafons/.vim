@@ -36,6 +36,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 " ================ Buftabline    ====================
 let g:buftabline_show = 1
+let g:buftabline_numbers = 1
 
 
 
@@ -57,6 +58,7 @@ let g:ale_linters = {
 let g:ale_fixers = {
       \ 'python': ['black', 'isort'],
       \ 'cpp': ['clang-format'],
+      \ 'cuda': ['clang-format'],
       \ 'json': ['fixjson'],
       \ 'sh': ['shfmt'],
       \ 'javascript': ['prettier'],
@@ -85,15 +87,6 @@ let g:easytags_dynamic_files = 1
 let g:easytags_always_enabled = 1
 let g:easytags_auto_update = 0
 let g:easytags_python_enabled = 1
-
-
-
-" ================ Autoformat    ====================
-let g:autoformat_autoindent = 0
-let g:autoformat_retab = 0
-let g:autoformat_remove_trailing_spaces = 0
-let g:formatdef_clang_format = '"clang-format -style=LLVM"'
-let g:formatters_cpp = ['clang_format']
 
 
 

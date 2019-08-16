@@ -11,8 +11,8 @@ let mapleader=","
 
 " ================  Movement    ====================
 "--- Move through visual lines
-nnoremap j gj
-nnoremap k gk
+nnoremap <silent> j gj
+nnoremap <silent> k gk
 
 "--- Faster window navigation
 nnoremap <C-h> <C-w>h
@@ -95,9 +95,6 @@ nnoremap <Leader>p "+p
 nnoremap <silent> <Leader>f :NERDTreeToggle<Enter>
 nnoremap <silent> <Leader>v :NERDTreeFind<CR>
 
-" ===========     Tagbar    ===============
-nnoremap <silent> <Leader>t :TagbarToggle<CR>
-
 " ===========     a.vim     ===============
 "--- Switch to header/cpp
 nnoremap <silent> <Leader>a :A<CR>
@@ -105,22 +102,17 @@ nnoremap <silent> <Leader>s :AS<CR>
 
 " ===========  ALEFix       ==============
 nnoremap <F4> :ALEFix<CR>
-" nmap <silent> <C-n> <Plug>(ale_next_wrap)
-" nmap <silent> <C-p> <Plug>(ale_previous_wrap)
-
-" ===========  ALEFix       ==============
-nmap <silent> <C-n> :lnext<CR>
-nmap <silent> <C-p> :lprev<CR>
+nmap <silent> <C-n> <Plug>(ale_next_wrap)
+nmap <silent> <C-p> <Plug>(ale_previous_wrap)
 
 " ===========  indent-gui   ==============
 nnoremap <Leader>ig :IndentGuidesToggle<CR>
 
-" ===========  Cscope.vim   ==============
-nnoremap <Leader>gc :cs find c <C-R>=expand('<cword>')<CR><CR>
-nnoremap <Leader>gd :cs find d <C-R>=expand('<cword>')<CR><CR>
-nnoremap <Leader>ge :cs find e <C-R>=expand('<cword>')<CR><CR>
-nnoremap <Leader>gf :cs find f <C-R>=expand('<cfile>')<CR><CR>
-nnoremap <Leader>gg :cs find g <C-R>=expand('<cword>')<CR><CR>
-nnoremap <Leader>gi :cs find i <C-R>=expand('<cfile>')<CR><CR>
-nnoremap <Leader>gs :cs find s <C-R>=expand('<cword>')<CR><CR>
-nnoremap <Leader>gt :cs find t <C-R>=expand('<cword>')<CR><CR>
+nnoremap <Leader>bt :Termdebug<CR>
+nnoremap <Leader>bb :Break<CR>
+nnoremap <Leader>bd :Delete<CR>
+nnoremap <Leader>bw :Watch<CR>
+nnoremap <Leader>bg :Gdb<CR>
+nnoremap <F8> :Step<CR>
+nnoremap <F9> :Over<CR>
+nnoremap <F7> :Finish<CR>

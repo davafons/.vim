@@ -42,7 +42,6 @@ Plug 'w0rp/ale'                             " Linting and Fixer
 
 " ================ Style/Format ====================
 Plug 'sheerun/vim-polyglot'                 " Syntax highlighting for + langs
-Plug 'Chiel92/vim-autoformat'               " Autoformat code
 Plug 'ntpeters/vim-better-whitespace'       " Highlight trailing whitespaces
 Plug 'nathanaelkane/vim-indent-guides'      " Show indent guides
 Plug 'ap/vim-buftabline'                    " Show buffers as a tabline
@@ -64,3 +63,8 @@ Plug 'vim-scripts/a.vim'                    " Swap between .h and .cpp files
 
 
 call plug#end()
+
+
+
+" ================ Extra        ====================
+packadd termdebug
