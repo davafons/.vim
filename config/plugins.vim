@@ -53,7 +53,7 @@ Plug 'cohama/lexima.vim'                    " Auto pair braces
 Plug 'tpope/vim-surround'                   " Mappings to change braces
 Plug 'tomtom/tcomment_vim'                  " Autocomment with gc
 Plug 'tpope/vim-repeat'                     " Repeat mapppings from plugins
-Plug 'davafons/a.vim'                    " Swap between .h and .cpp files
+Plug 'davafons/a.vim'                       " Swap between .h and .cpp files
 
 
 

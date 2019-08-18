@@ -52,7 +52,7 @@ let g:ale_linters = {
       \ 'java': ['javac'],
       \ 'python': ['mypy --ignore-missing-imports', 'flake8', 'pylint'],
       \ 'javascript': ['eslint'],
-      \ 'cpp': ['clang']
+      \ 'cpp': ['clangcheck']
       \ }
 
 let g:ale_fixers = {
