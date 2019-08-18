@@ -126,6 +126,7 @@ nmap <silent> <C-p> <Plug>(ale_previous_wrap)
 " ===========  indent-gui   ==============
 nnoremap <Leader>ig :IndentGuidesToggle<CR>
 
+" ===========  Termdebug    ==============
 nnoremap <Leader>bt :Termdebug<CR>
 nnoremap <Leader>bb :Break<CR>
 nnoremap <Leader>bd :Delete<CR>
@@ -134,3 +135,12 @@ nnoremap <Leader>bg :Gdb<CR>
 nnoremap <F8> :Step<CR>
 nnoremap <F9> :Over<CR>
 nnoremap <F7> :Finish<CR>
+
+" ===========  YouComplMe   ==============
+nnoremap <Leader>gg :YcmCompleter GoTo<CR>
+nnoremap <Leader>gd :YcmCompleter GoToDeclaration<CR>
+nnoremap <Leader>gf :YcmCompleter GoToDefinition<CR>
+nnoremap <Leader>gr :YcmCompleter GoToReferences<CR>
+nnoremap <Leader>gi :YcmCompleter GoToImplementation<CR>
+nnoremap <Leader>gt :YcmCompleter GoToType<CR>
+nnoremap <Leader>gy :YcmCompleter GetType<CR>
