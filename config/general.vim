@@ -46,6 +46,21 @@ set undolevels=1000     " A lot of undo levels
 set undodir=~/.vim/undodir
 set undofile
 
+" Quickfix
+augroup qf
+    au!
+    au FileType qf set nobuflisted
+    au WinEnter * if winnr('$') == 1 && &buftype == "quickfix"|q|endif
+augroup END
+
+
+" Terminal
+augroup term
+    au!
+    au TerminalOpen * set nobuflisted
+augroup END
+
+
 
 
 " ================       Files        ====================
