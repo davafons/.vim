@@ -144,3 +144,4 @@ nnoremap <Leader>gr :YcmCompleter GoToReferences<CR>
 nnoremap <Leader>gi :YcmCompleter GoToImplementation<CR>
 nnoremap <Leader>gt :YcmCompleter GoToType<CR>
 nnoremap <Leader>gy :YcmCompleter GetType<CR>
+nnoremap <Leader>gk :YcmCompleter GetDoc<CR>
