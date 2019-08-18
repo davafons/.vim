@@ -97,13 +97,6 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=0
 
 
 
-" ================ vim_qf        ====================
-let g:qf_auto_open_quickfix = 0
-let g:qf_auto_open_loclist = 0
-let g:qf_loclist_window_bottom = 0
-
-
-
 " ================ Neomake       ====================
 " call neomake#configure#automake('w')
 let g:neomake_open_list = 2

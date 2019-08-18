@@ -20,7 +20,7 @@ Plug 'airblade/vim-gitgutter'               " Show git sign column
 Plug 'scrooloose/nerdtree'                  " Folder Tree view
 Plug 'ryanoasis/vim-devicons'               " Show icons in NerdTree
 Plug 'jeffkreeftmeijer/vim-numbertoggle'    " Hybrid number line
-Plug 'romainl/vim-qf'                       " Better quickfix behaviour
+" Plug 'romainl/vim-qf'                       " Better quickfix behaviour
 
 
 
