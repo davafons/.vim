@@ -20,16 +20,15 @@ Plug 'airblade/vim-gitgutter'               " Show git sign column
 Plug 'scrooloose/nerdtree'                  " Folder Tree view
 Plug 'ryanoasis/vim-devicons'               " Show icons in NerdTree
 Plug 'jeffkreeftmeijer/vim-numbertoggle'    " Hybrid number line
-" Plug 'romainl/vim-qf'                       " Better quickfix behaviour
 
 
 
 " ================ Lint/Compl   ====================
-Plug 'Valloric/YouCompleteMe', {'do': './install.py --clang-completer --java-completer --js-completer'}
+Plug 'Valloric/YouCompleteMe', {
+      \ 'do': './install.py --clang-completer --java-completer --js-completer'
+      \ }
+
 Plug 'w0rp/ale'                             " Linting and Fixer
-" Plug 'neomake/neomake'
-" Plug 'janko-m/vim-test'                     " Vim wrapper for running tests
-" Plug 'tpope/vim-dispatch'
 
 
 
@@ -45,7 +44,11 @@ Plug 'sheerun/vim-polyglot'                 " Syntax highlighting for + langs
 Plug 'ntpeters/vim-better-whitespace'       " Highlight trailing whitespaces
 Plug 'nathanaelkane/vim-indent-guides'      " Show indent guides
 Plug 'ap/vim-buftabline'                    " Show buffers as a tabline
-
+Plug 'junegunn/fzf', {
+      \ 'dir': '~/.fzf',
+      \ 'do': './install --all'
+      \ }
+Plug 'junegunn/fzf.vim'
 
 
 " ================ Mappings     ====================
@@ -53,7 +56,7 @@ Plug 'cohama/lexima.vim'                    " Auto pair braces
 Plug 'tpope/vim-surround'                   " Mappings to change braces
 Plug 'tomtom/tcomment_vim'                  " Autocomment with gc
 Plug 'tpope/vim-repeat'                     " Repeat mapppings from plugins
-Plug 'davafons/a.vim'                       " Swap between .h and .cpp files
+Plug 'nacitar/a.vim'                       " Swap between .h and .cpp files
 
 
 

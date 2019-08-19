@@ -52,7 +52,8 @@ let g:ale_linters = {
       \ 'java': ['javac'],
       \ 'python': ['mypy --ignore-missing-imports', 'flake8', 'pylint'],
       \ 'javascript': ['eslint'],
-      \ 'cpp': ['clangcheck']
+      \ 'cpp': ['clangcheck'],
+      \ 'cuda': ['nvcc']
       \ }
 
 let g:ale_fixers = {
@@ -66,6 +67,8 @@ let g:ale_fixers = {
       \ }
 
 let g:ale_echo_msg_format = '[%linter%] %s'
+
+let g:ale_cuda_nvcc_options = "-std=c++14"
 
 
 
@@ -113,3 +116,5 @@ let g:ycm_semantic_triggers = {
       \   'c,cpp,cuda,objcpp': ['->', '.', '::', 're!cuda', 're!SDL_', 're!gl', 're!glfw', 're!GLFW_', 're!GL_'],
       \   'ruby'  : ['.', '::']
       \ }
+
+

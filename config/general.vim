@@ -36,6 +36,7 @@ set number relativenumber " Hybrid number line
 " ================     Searching      ====================
 set incsearch           " Search as characters are entered
 set hlsearch            " Highlight matches
+set ignorecase
 set smartcase           " Search lo/up case if no uppercase entered
 
 
@@ -53,13 +54,11 @@ augroup qf
     au WinEnter * if winnr('$') == 1 && &buftype == "quickfix"|q|endif
 augroup END
 
-
 " Terminal
 augroup term
     au!
     au TerminalOpen * set nobuflisted
 augroup END
-
 
 
 
