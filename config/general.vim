@@ -51,7 +51,7 @@ set undofile
 augroup qf
     au!
     au FileType qf set nobuflisted
-    au WinEnter * if winnr('$') == 1 && &buftype == "quickfix"|q|endif
+    au WinEnter * if winnr('$') == 1 && &buftype == "quickfix"| bd |endif
 augroup END
 
 " Terminal
