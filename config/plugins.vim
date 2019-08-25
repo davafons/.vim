@@ -33,9 +33,9 @@ Plug 'w0rp/ale'                             " Linting and Fixer
 
 
 " ================ Tags         ====================
-" Plug 'majutsushi/tagbar'                    " Tags window
-" Plug 'xolox/vim-easytags'                   " ctags syntax highlighter
-" Plug 'xolox/vim-misc'                       " Helper plugin used by easytags
+Plug 'majutsushi/tagbar'                    " Tags window
+Plug 'ludovicchabant/vim-gutentags'
+Plug 'vim-scripts/TagHighlight'
 
 
 
