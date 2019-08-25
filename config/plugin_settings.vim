@@ -113,7 +113,7 @@ let g:neomake_cpp_clang_maker = {
 
 " ================ YouCompleteMe ====================
 let g:ycm_semantic_triggers = {
-      \   'c,cpp,cuda,objcpp': ['->', '.', '::', 're!cuda', 're!SDL_', 're!gl', 're!glfw', 're!GLFW_', 're!GL_'],
+      \   'c,cpp,cuda,objcpp': ['->', '.', '::', 're!cuda', 're!SDL_', 're!gl', 're!glfw', 're!GLFW_', 're!GL_', 're!Q'],
       \   'ruby'  : ['.', '::']
       \ }
 
@@ -123,3 +123,4 @@ hi link CTagsMember Identifier
 hi link CTagsClass Structure
 hi link cppStructure Statement
 hi link CTagsNamespace Typedef
+hi link cppModifier Special
