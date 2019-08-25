@@ -68,7 +68,7 @@ let g:ale_fixers = {
 
 let g:ale_echo_msg_format = '[%linter%] %s'
 
-let g:ale_cuda_nvcc_options = "-std=c++14"
+let g:ale_cuda_nvcc_options = "--std=c++14"
 
 
 
@@ -118,3 +118,8 @@ let g:ycm_semantic_triggers = {
       \ }
 
 
+" ================ TagHighlight  ====================
+hi link CTagsMember Identifier
+hi link CTagsClass Structure
+hi link cppStructure Statement
+hi link CTagsNamespace Typedef

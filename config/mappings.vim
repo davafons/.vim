@@ -27,10 +27,10 @@ nnoremap <C-w><C-k> <C-w>K
 nnoremap <C-w><C-l> <C-w>L
 
 "--- Resize windows
-nnoremap <silent> <Up> :resize -2<CR>
-nnoremap <silent> <Down> :resize +2<CR>
-nnoremap <silent> <Left> :vertical resize -2<CR>
-nnoremap <silent> <Right> :vertical resize +2<CR>
+" nnoremap <silent> <Up> :resize -2<CR>
+" nnoremap <silent> <Down> :resize +2<CR>
+" nnoremap <silent> <Left> :vertical resize -2<CR>
+" nnoremap <silent> <Right> :vertical resize +2<CR>
 
 "--- Change window size
 nnoremap <C-w><C-m> <C-w>\| <C-W>_
@@ -105,6 +105,10 @@ endif
 nnoremap <silent> <Leader>l :vsplit<CR>
 nnoremap <silent> <Leader>L :split<CR>
 
+"--- Get highlight group under the cursor
+nnoremap <F6> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
+      \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
+      \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 
 
 " ================   Plugins    ====================
@@ -145,3 +149,13 @@ nnoremap <Leader>gi :YcmCompleter GoToImplementation<CR>
 nnoremap <Leader>gt :YcmCompleter GoToType<CR>
 nnoremap <Leader>gy :YcmCompleter GetType<CR>
 nnoremap <Leader>gk :YcmCompleter GetDoc<CR>
+
+
+" ===========  Tagbar       ==============
+nnoremap <Leader>gt <C-]>
+nnoremap <Leader>t :TagbarToggle<CR>
+
+
+" ===========  fzf          ==============
+nnoremap <Leader>rt :Tags<CR>
+nnoremap <Leader>rf :Files<CR>
