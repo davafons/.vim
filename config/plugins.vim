@@ -59,12 +59,6 @@ Plug 'tpope/vim-repeat'                     " Repeat mapppings from plugins
 Plug 'nacitar/a.vim'                       " Swap between .h and .cpp files
 
 
-
-" ================ Langs        ====================
-" Plug 'adimit/prolog.vim'
-" Plug 'plytophogy/vim-virtualenv'
-
-
 call plug#end()
 
 

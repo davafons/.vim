@@ -73,23 +73,23 @@ let g:ale_cuda_nvcc_options = "--std=c++14"
 
 
 "  ================ Gen_tags      ====================
-let g:gen_tags#ctags_auto_gen = 1
-let g:gen_tags#ctags_opts = '--fields=+l --c-kinds=+px --c++-kinds=+px'
-let g:gen_tags#gtags_auto_gen = 0
-let g:gen_tags#use_cache_dir = 0
-let g:gen_tags#gtags_default_map = 0
-
-" Supress warning `version 0.0.0`
-let g:easytags_suppress_ctags_warning = 1
+" let g:gen_tags#ctags_auto_gen = 1
+" let g:gen_tags#ctags_opts = '--fields=+l --c-kinds=+px --c++-kinds=+px'
+" let g:gen_tags#gtags_auto_gen = 0
+" let g:gen_tags#use_cache_dir = 0
+" let g:gen_tags#gtags_default_map = 0
+"
+" " Supress warning `version 0.0.0`
+" let g:easytags_suppress_ctags_warning = 1
 
 
 
 " ================ Easytags      ====================
-let g:easytags_async = 1
-let g:easytags_dynamic_files = 1
-let g:easytags_always_enabled = 1
-let g:easytags_auto_update = 0
-let g:easytags_python_enabled = 1
+" let g:easytags_async = 1
+" let g:easytags_dynamic_files = 1
+" let g:easytags_always_enabled = 1
+" let g:easytags_auto_update = 0
+" let g:easytags_python_enabled = 1
 
 
 
@@ -102,12 +102,12 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=0
 
 " ================ Neomake       ====================
 " call neomake#configure#automake('w')
-let g:neomake_open_list = 2
-
-let g:neomake_cpp_enable_makers = ['clang']
-let g:neomake_cpp_clang_maker = {
-  \ 'exe': 'clang-tidy',
-  \ }
+" let g:neomake_open_list = 2
+"
+" let g:neomake_cpp_enable_makers = ['clang']
+" let g:neomake_cpp_clang_maker = {
+"   \ 'exe': 'clang-tidy',
+"   \ }
 
 
 
@@ -116,6 +116,7 @@ let g:ycm_semantic_triggers = {
       \   'c,cpp,cuda,objcpp': ['->', '.', '::', 're!cuda', 're!SDL_', 're!gl', 're!glfw', 're!GLFW_', 're!GL_', 're!Q'],
       \   'ruby'  : ['.', '::']
       \ }
+
 
 
 " ================ TagHighlight  ====================
