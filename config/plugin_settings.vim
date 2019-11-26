@@ -23,6 +23,7 @@ let NERDTreeNaturalSort = 1         " Sort as 1, 2, 10 instead of 1, 10, 2
 let NERDTreeChDirMode = 1           " Change NERDTree cwd when opening vim
 let NERDTreeMinimalUI = 1           " Hide ? for help
 let NERDTreeShowHidden = 1          " Show hidden files
+let NERDTreeIgnore = ["__pycache__"]
 
 "Open NERDTree if no files specified
 autocmd StdinReadPre * let s:std_in = 1
