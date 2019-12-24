@@ -63,8 +63,8 @@ Plug 'cohama/lexima.vim'                    " Auto pair braces
 Plug 'tpope/vim-surround'                   " Mappings to change braces
 Plug 'tomtom/tcomment_vim'                  " Auto-comment with gc
 Plug 'tpope/vim-repeat'                     " Repeat mappings from pluggins
-Plug 'nacitar/a.vim'                       " Swap between .h and .cpp files
-Plug 'tpope/vim-abolish'
+Plug 'nacitar/a.vim'                        " Swap between .h and .cpp files
+Plug 'tpope/vim-abolish'                    " Easier word substitution
 
 
 call plug#end()

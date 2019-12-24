@@ -65,9 +65,6 @@ nnoremap <silent> <leader>sv :source $MYVIMRC<CR>
 "--- Disable search highlight
 nnoremap <silent> <Leader><space> :nohlsearch<CR>
 
-"--- Change to paste mode
-set pastetoggle=<F2>
-
 "--- Easy delete buffer
 nnoremap <Leader>q :bd<CR>
 
@@ -91,6 +88,7 @@ if has("clipboard")
   noremap <Leader>p "+p
 endif
 
+map <silent> <F2> :setlocal spell!<CR>
 
 "--- Shortcuts for split window
 nnoremap <silent> <Leader>l :vsplit<CR>

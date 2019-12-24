@@ -134,9 +134,10 @@ hi link cppModifier Special
 " ================ Vim-Lexical   ====================
 augroup lexical
   autocmd!
-  autocmd FileType markdown,mkd call lexical#init()
+  autocmd FileType * call lexical#init()
 augroup END
 
+let g:lexical#spell = 0
 let g:lexical#spelllang = ['en_gb', 'es_es']
 let g:lexical#thesaurus = ['~/.vim/spell/mthesaur.txt']
 
