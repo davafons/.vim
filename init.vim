@@ -16,7 +16,8 @@ source ~/.vim/config/mappings.vim
 
 
 " ================    Ftplugin        ====================
-" ftplugin/java.vim
-" ftplugin/prolog.vim
-" ftplugin/python.vim
-" ftplugin/javascript.vim
+" after/ftplugin/java.vim
+" after/ftplugin/prolog.vim
+" after/ftplugin/python.vim
+" after/ftplugin/javascript.vim
+" after/ftplugin/mkd.vim

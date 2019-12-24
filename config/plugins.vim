@@ -27,7 +27,6 @@ Plug 'mhinz/vim-startify'                   " Start screen for vim
 Plug 'Valloric/YouCompleteMe', {
       \ 'do': './install.py --clang-completer --java-completer --js-completer'
       \ }
-
 Plug 'w0rp/ale'                             " Linting and Fixer
 
 
@@ -51,12 +50,21 @@ Plug 'junegunn/fzf', {
 Plug 'junegunn/fzf.vim'
 
 
+
+" ================ Writing      ====================
+Plug 'junegunn/goyo.vim'
+Plug 'reedes/vim-lexical'
+Plug 'reedes/vim-wordy'
+Plug 'dbmrq/vim-ditto'
+
+
 " ================ Mappings     ====================
 Plug 'cohama/lexima.vim'                    " Auto pair braces
 Plug 'tpope/vim-surround'                   " Mappings to change braces
 Plug 'tomtom/tcomment_vim'                  " Autocomment with gc
 Plug 'tpope/vim-repeat'                     " Repeat mapppings from plugins
 Plug 'nacitar/a.vim'                       " Swap between .h and .cpp files
+Plug 'tpope/vim-abolish'
 
 
 call plug#end()

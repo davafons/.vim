@@ -51,7 +51,7 @@ let g:ale_lint_on_text_changed = '0'
 
 let g:ale_linters = {
       \ 'java': ['javac'],
-      \ 'python': ['mypy --ignore-missing-imports', 'flake8', 'pylint'],
+      \ 'python': ['flake8', 'prospector'],
       \ 'javascript': ['eslint'],
       \ 'cpp': ['clangcheck'],
       \ 'cuda': ['nvcc']
@@ -69,7 +69,9 @@ let g:ale_fixers = {
 
 let g:ale_echo_msg_format = '[%linter%] %s'
 
-let g:ale_cuda_nvcc_options = "--std=c++14"
+let g:ale_cuda_nvcc_options = '--std=c++14'
+
+let g:ale_python_mypy_options = '--ignore-missing-imports'
 
 
 
@@ -126,3 +128,22 @@ hi link CTagsClass Structure
 hi link cppStructure Statement
 hi link CTagsNamespace Typedef
 hi link cppModifier Special
+
+
+
+" ================ Vim-Lexical   ====================
+augroup lexical
+  autocmd!
+  autocmd FileType markdown,mkd call lexical#init()
+augroup END
+
+let g:lexical#spelllang = ['en_gb', 'es_es']
+let g:lexical#thesaurus = ['~/.vim/spell/mthesaur.txt']
+
+let g:lexical#spell_key = '<Leader>ss'
+let g:lexical#thesaurus_key = '<Leader>sa'
+let g:lexical#dictonary_key = '<Leader>sd'
+
+
+" ================ Ditto         ====================
+au FileType markdown,mkd DittoOn     " Turn on Ditto's autocmd

@@ -26,18 +26,9 @@ nnoremap <C-w><C-j> <C-w>J
 nnoremap <C-w><C-k> <C-w>K
 nnoremap <C-w><C-l> <C-w>L
 
-"--- Resize windows
-" nnoremap <silent> <Up> :resize -2<CR>
-" nnoremap <silent> <Down> :resize +2<CR>
-" nnoremap <silent> <Left> :vertical resize -2<CR>
-" nnoremap <silent> <Right> :vertical resize +2<CR>
-
 "--- Change window size
 nnoremap <C-w><C-m> <C-w>\| <C-W>_
 nnoremap <C-w><C-e> <C-w>=
-
-"--- Go to Tag
-nmap <Leader>d <C-]>
 
 "--- Move to next/prev buffer
 if has("nvim")
@@ -120,7 +111,6 @@ nnoremap <silent> <Leader>v :NERDTreeFind<CR>
 " ===========     a.vim     ===============
 "--- Switch to header/cpp
 nnoremap <silent> <Leader>a :A<CR>
-nnoremap <silent> <Leader>s :AS<CR>
 
 " ===========  ALEFix       ==============
 nnoremap <F4> :ALEFix<CR>
@@ -150,11 +140,9 @@ nnoremap <Leader>gt :YcmCompleter GoToType<CR>
 nnoremap <Leader>gy :YcmCompleter GetType<CR>
 nnoremap <Leader>gk :YcmCompleter GetDoc<CR>
 
-
 " ===========  Tagbar       ==============
-nnoremap <Leader>gt <C-]>
-nnoremap <Leader>t :TagbarToggle<CR>
-
+" nnoremap <Leader> <C-]>
+nnoremap <Leader>y :TagbarToggle<CR>
 
 " ===========  fzf          ==============
 nnoremap <Leader>rt :Tags<CR>
