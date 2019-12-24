@@ -36,8 +36,8 @@ set number relativenumber " Hybrid number line
 " ================     Searching      ====================
 set incsearch           " Search as characters are entered
 set hlsearch            " Highlight matches
-set ignorecase
-set smartcase           " Search lo/up case if no uppercase entered
+set ignorecase          " Ignore cases on searches
+set smartcase           " Search lo/up case if no upper-case entered
 
 
 
