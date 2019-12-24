@@ -11,7 +11,7 @@ set shiftwidth=2        " When indenting with '>', use 4 spaces width
 set expandtab           " Tabs are spaces
 set smarttab            " Insert tabs according to shiftwidth, not tabstop
 set autoindent          " Enable auto indentation
-set copyindent          " Copy previous indentation on autoindenting
+set copyindent          " Copy previous indentation on auto indenting
 set shiftround          " Use multiples of shiftwidth when indenting
 
 
@@ -25,7 +25,7 @@ set laststatus=2        " Always display status line
 set noshowmode          " Don't show --INSERT-- --NORMAL-- modes
 set hidden              " Hide buffers instead of closing
 set title               " Show terminal's title
-set backspace=indent,eol,start  " Godmode backspace
+set backspace=indent,eol,start  " God-mode backspace
 set noerrorbells        " No error beep
 set textwidth=88        " Force wrap lines at 80
 set colorcolumn=89      " Show column limit at line 80
@@ -42,7 +42,7 @@ set smartcase           " Search lo/up case if no uppercase entered
 
 
 " ================       Buffer       ====================
-set history=1000        " Remember more commands and seach history
+set history=1000        " Remember more commands and search history
 set undolevels=1000     " A lot of undo levels
 set undodir=~/.vim/undodir
 set undofile

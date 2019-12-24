@@ -82,7 +82,7 @@ let g:ale_python_mypy_options = '--ignore-missing-imports'
 " let g:gen_tags#use_cache_dir = 0
 " let g:gen_tags#gtags_default_map = 0
 "
-" " Supress warning `version 0.0.0`
+" " Suppress warning `version 0.0.0`
 " let g:easytags_suppress_ctags_warning = 1
 
 
@@ -146,4 +146,4 @@ let g:lexical#dictonary_key = '<Leader>sd'
 
 
 " ================ Ditto         ====================
-au FileType markdown,mkd DittoOn     " Turn on Ditto's autocmd
+au FileType markdown,mkd DittoOn     " Turn on Ditto

@@ -62,10 +62,10 @@ imap <c-s> <Esc>:w<CR>a
 nnoremap <silent> <leader>ev :e $MYVIMRC<CR>
 nnoremap <silent> <leader>sv :source $MYVIMRC<CR>
 
-"--- Disable search highligh
+"--- Disable search highlight
 nnoremap <silent> <Leader><space> :nohlsearch<CR>
 
-"--- Change to pastemode
+"--- Change to paste mode
 set pastetoggle=<F2>
 
 "--- Easy delete buffer
@@ -141,7 +141,6 @@ nnoremap <Leader>gy :YcmCompleter GetType<CR>
 nnoremap <Leader>gk :YcmCompleter GetDoc<CR>
 
 " ===========  Tagbar       ==============
-" nnoremap <Leader> <C-]>
 nnoremap <Leader>y :TagbarToggle<CR>
 
 " ===========  fzf          ==============

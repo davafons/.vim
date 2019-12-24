@@ -12,7 +12,7 @@ endif
 
 
 
-" ================  Colorscheme  ====================
+" ================  Colour scheme  ====================
 set background=dark
 silent! colorscheme solarized8
 
