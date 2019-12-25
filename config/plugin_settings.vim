@@ -138,7 +138,7 @@ augroup lexical
 augroup END
 
 let g:lexical#spell = 0
-let g:lexical#spelllang = ['en_gb', 'es_es']
+let g:lexical#spelllang = ['en_us', 'es_es']
 let g:lexical#thesaurus = ['~/.vim/spell/mthesaur.txt']
 
 let g:lexical#spell_key = '<Leader>ss'
