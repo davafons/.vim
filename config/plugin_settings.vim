@@ -51,7 +51,7 @@ let g:ale_lint_on_text_changed = '0'
 
 let g:ale_linters = {
       \ 'java': ['javac'],
-      \ 'python': ['flake8', 'prospector'],
+      \ 'python': ['flake8', 'mypy', 'pylint'],
       \ 'javascript': ['eslint'],
       \ 'cpp': ['clangcheck'],
       \ 'cuda': ['nvcc']
@@ -72,6 +72,8 @@ let g:ale_echo_msg_format = '[%linter%] %s'
 let g:ale_cuda_nvcc_options = '--std=c++14'
 
 let g:ale_python_mypy_options = '--ignore-missing-imports'
+
+let g:ale_python_auto_pipenv = 1
 
 
 
