@@ -47,7 +47,7 @@ let g:ale_set_loclist = 0
 let g:ale_set_quickfix = 1
 let g:ale_list_window_size = 7
 
-let g:ale_lint_on_text_changed = '0'
+" let g:ale_lint_on_text_changed = '0'
 
 let g:ale_linters = {
       \ 'java': ['javac'],
@@ -121,6 +121,19 @@ let g:ycm_semantic_triggers = {
       \   'c,cpp,cuda,objcpp': ['->', '.', '::', 're!cuda', 're!SDL_', 're!gl', 're!glfw', 're!GLFW_', 're!GL_', 're!Q'],
       \   'ruby'  : ['.', '::']
       \ }
+
+let g:ycm_min_num_of_chars_for_completion = 1
+
+" ================ pymode        ====================
+let g:pymode_options = 0
+let g:pymode_options_max_line_length = 88
+let g:pymode_folding = 0
+let g:pymode_lint = 0
+let g:pymode_rope = 1
+let g:pymode_rope_completion = 0
+let g:pymode_rope_autoimport = 0
+let g:pymode_rope_goto_definition_bind = '<Leader>e'
+let g:pymode_rope_use_function_bind = '<Leader>ru'
 
 
 
