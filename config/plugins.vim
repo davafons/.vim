@@ -28,6 +28,7 @@ Plug 'Valloric/YouCompleteMe', {
       \ 'do': './install.py --clang-completer --java-completer --js-completer'
       \ }                                   " Completion list
 Plug 'w0rp/ale'                             " Linting and Fixer
+" Plug 'python-mode/python-mode'              " Vim as a Python IDE
 
 
 

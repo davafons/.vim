@@ -142,5 +142,5 @@ nnoremap <Leader>gk :YcmCompleter GetDoc<CR>
 nnoremap <Leader>y :TagbarToggle<CR>
 
 " ===========  fzf          ==============
-nnoremap <Leader>rt :Tags<CR>
-nnoremap <Leader>rf :Files<CR>
+nnoremap <Leader>wt :Tags<CR>
+nnoremap <Leader>wf :Files<CR>
