@@ -73,9 +73,6 @@ let g:ale_cuda_nvcc_options = '--std=c++14'
 
 let g:ale_python_mypy_options = '--ignore-missing-imports'
 
-let g:ale_python_auto_pipenv = 1
-
-
 
 "  ================ Gen_tags      ====================
 " let g:gen_tags#ctags_auto_gen = 1
