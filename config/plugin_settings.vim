@@ -44,8 +44,8 @@ let g:buftabline_numbers = 1
 "  ================ ALE           ====================
 let g:ale_open_list = 1
 let g:ale_list_window_size = 7
-" let g:ale_set_loclist = 0
-" let g:ale_set_quickfix = 1
+let g:ale_set_loclist = 0
+let g:ale_set_quickfix = 1
 
 let g:ale_fix_on_save = 1
 
@@ -72,6 +72,8 @@ let g:ale_echo_msg_format = '[%linter%] %s'
 let g:ale_cuda_nvcc_options = '--std=c++14'
 
 let g:ale_python_mypy_options = '--ignore-missing-imports'
+
+let g:ale_python_pydocstyle_options = '--convention=google'
 
 
 "  ================ Gutentags     ====================
