@@ -10,8 +10,8 @@ filetype plugin on
 source ~/.vim/config/general.vim
 source ~/.vim/config/plugins.vim
 source ~/.vim/config/plugin_settings.vim
-source ~/.vim/config/style.vim
 source ~/.vim/config/mappings.vim
+source ~/.vim/config/style.vim
 
 
 
@@ -20,3 +20,5 @@ source ~/.vim/config/mappings.vim
 " ftplugin/prolog.vim
 " ftplugin/python.vim
 " ftplugin/javascript.vim
+
+" after/plugin/abolish.vim

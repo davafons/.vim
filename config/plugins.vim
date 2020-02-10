@@ -24,18 +24,19 @@ Plug 'mhinz/vim-startify'                   " Start screen for vim
 
 
 " ================ Lint/Compl   ====================
-Plug 'Valloric/YouCompleteMe', {
-      \ 'do': './install.py --clang-completer --java-completer --js-completer'
-      \ }                                   " Completion list
 Plug 'w0rp/ale'                             " Linting and Fixer
-" Plug 'python-mode/python-mode'              " Vim as a Python IDE
+
+" ================ Lint/Compl   ====================
+Plug 'neoclide/coc.nvim', { 'branch': 'release', 'do': { -> coc#util#install() } }
+
 
 
 
 " ================ Tags         ====================
-Plug 'majutsushi/tagbar'                    " Tags window
-Plug 'ludovicchabant/vim-gutentags'         " Auto generate tags from files
-Plug 'vim-scripts/TagHighlight'             " Update highlight using tags
+" Plug 'majutsushi/tagbar'                    " Tags window
+" Plug 'ludovicchabant/vim-gutentags'         " Auto generate tags from files
+" Plug 'vim-scripts/TagHighlight'             " Update highlight using tags
+" Plug 'mgedmin/python-imports.vim'           " Autoimport python modules
 
 
 
@@ -53,19 +54,19 @@ Plug 'junegunn/fzf.vim'                     " Fuzzy finder (for vim)
 
 
 " ================ Writing      ====================
-Plug 'junegunn/goyo.vim'                    " Distraction-free writing
-Plug 'reedes/vim-lexical'
-Plug 'reedes/vim-wordy'
-Plug 'dbmrq/vim-ditto'
+" Plug 'junegunn/goyo.vim'                    " Distraction-free writing
+" Plug 'reedes/vim-lexical'
+" Plug 'reedes/vim-wordy'
+" Plug 'dbmrq/vim-ditto'
 
 
 " ================ Mappings     ====================
 Plug 'cohama/lexima.vim'                    " Auto pair braces
+Plug 'tpope/vim-commentary'                 " Auto-comment with gc
 Plug 'tpope/vim-surround'                   " Mappings to change braces
-Plug 'tomtom/tcomment_vim'                  " Auto-comment with gc
-Plug 'tpope/vim-repeat'                     " Repeat mappings from pluggins
-Plug 'nacitar/a.vim'                        " Swap between .h and .cpp files
+Plug 'tpope/vim-repeat'                     " Repeat mappings from plugins
 Plug 'tpope/vim-abolish'                    " Easier word substitution
+Plug 'nacitar/a.vim'                        " Swap between .h and .cpp files
 
 
 call plug#end()
@@ -73,4 +74,4 @@ call plug#end()
 
 
 " ================ Extra        ====================
-packadd termdebug
+" packadd termdebug

@@ -43,11 +43,11 @@ let g:buftabline_numbers = 1
 
 "  ================ ALE           ====================
 let g:ale_open_list = 1
-let g:ale_set_loclist = 0
-let g:ale_set_quickfix = 1
 let g:ale_list_window_size = 7
+" let g:ale_set_loclist = 0
+" let g:ale_set_quickfix = 1
 
-" let g:ale_lint_on_text_changed = '0'
+let g:ale_fix_on_save = 1
 
 let g:ale_linters = {
       \ 'java': ['javac'],
@@ -74,24 +74,20 @@ let g:ale_cuda_nvcc_options = '--std=c++14'
 let g:ale_python_mypy_options = '--ignore-missing-imports'
 
 
-"  ================ Gen_tags      ====================
-" let g:gen_tags#ctags_auto_gen = 1
-" let g:gen_tags#ctags_opts = '--fields=+l --c-kinds=+px --c++-kinds=+px'
-" let g:gen_tags#gtags_auto_gen = 0
-" let g:gen_tags#use_cache_dir = 0
-" let g:gen_tags#gtags_default_map = 0
-"
-" " Suppress warning `version 0.0.0`
-" let g:easytags_suppress_ctags_warning = 1
+"  ================ Gutentags     ====================
+" let g:gutentags_ctags_exclude = [
+"       \ '.mypy_cache'
+"       \ ]
 
+" let g:gutentags_generate_on_new = 1
+" let g:gutentags_generate_on_missing = 1
+" let g:gutentags_generate_on_write = 1
+" let g:gutentags_generate_on_empty_buffer = 0
 
-
-" ================ Easytags      ====================
-" let g:easytags_async = 1
-" let g:easytags_dynamic_files = 1
-" let g:easytags_always_enabled = 1
-" let g:easytags_auto_update = 0
-" let g:easytags_python_enabled = 1
+" let g:gutentags_ctags_extra_args = [
+"       \ '--tag-relative=yes',
+"       \ '--fields=+ailmnS',
+"       \ ]
 
 
 
@@ -99,38 +95,6 @@ let g:ale_python_mypy_options = '--ignore-missing-imports'
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=8
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=0
-
-
-
-" ================ Neomake       ====================
-" call neomake#configure#automake('w')
-" let g:neomake_open_list = 2
-"
-" let g:neomake_cpp_enable_makers = ['clang']
-" let g:neomake_cpp_clang_maker = {
-"   \ 'exe': 'clang-tidy',
-"   \ }
-
-
-
-" ================ YouCompleteMe ====================
-let g:ycm_semantic_triggers = {
-      \   'c,cpp,cuda,objcpp': ['->', '.', '::', 're!cuda', 're!SDL_', 're!gl', 're!glfw', 're!GLFW_', 're!GL_', 're!Q'],
-      \   'ruby'  : ['.', '::']
-      \ }
-
-let g:ycm_min_num_of_chars_for_completion = 1
-
-" ================ pymode        ====================
-let g:pymode_options = 0
-let g:pymode_options_max_line_length = 88
-let g:pymode_folding = 0
-let g:pymode_lint = 0
-let g:pymode_rope = 1
-let g:pymode_rope_completion = 0
-let g:pymode_rope_autoimport = 0
-let g:pymode_rope_goto_definition_bind = '<Leader>e'
-let g:pymode_rope_use_function_bind = '<Leader>ru'
 
 
 
@@ -144,19 +108,20 @@ hi link cppModifier Special
 
 
 " ================ Vim-Lexical   ====================
-augroup lexical
-  autocmd!
-  autocmd FileType * call lexical#init()
-augroup END
+" augroup lexical
+"   autocmd!
+"   autocmd FileType * call lexical#init()
+" augroup END
 
-let g:lexical#spell = 0
-let g:lexical#spelllang = ['en_us', 'es_es']
-let g:lexical#thesaurus = ['~/.vim/spell/mthesaur.txt']
+" let g:lexical#spell = 0
+" let g:lexical#spelllang = ['en_us', 'es_es']
+" let g:lexical#thesaurus = ['~/.vim/spell/mthesaur.txt']
 
-let g:lexical#spell_key = '<Leader>ss'
-let g:lexical#thesaurus_key = '<Leader>sa'
-let g:lexical#dictonary_key = '<Leader>sd'
+" let g:lexical#spell_key = '<Leader>ss'
+" let g:lexical#thesaurus_key = '<Leader>sa'
+" let g:lexical#dictonary_key = '<Leader>sd'
+
 
 
 " ================ Ditto         ====================
-au FileType markdown,mkd DittoOn     " Turn on Ditto
+" au FileType markdown,mkd DittoOn     " Turn on Ditto

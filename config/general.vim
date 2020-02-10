@@ -7,7 +7,7 @@
 
 " ================ Default Indentation ====================
 set tabstop=2           " Number of visual spaces per TAB
-set shiftwidth=2        " When indenting with '>', use 4 spaces width
+set shiftwidth=2        " When indenting with '>', use 2 spaces width
 set expandtab           " Tabs are spaces
 set smarttab            " Insert tabs according to shiftwidth, not tabstop
 set autoindent          " Enable auto indentation
@@ -27,9 +27,11 @@ set hidden              " Hide buffers instead of closing
 set title               " Show terminal's title
 set backspace=indent,eol,start  " God-mode backspace
 set noerrorbells        " No error beep
-set textwidth=88        " Force wrap lines at 80
-set colorcolumn=89      " Show column limit at line 80
+set textwidth=89        " Force wrap lines at 89
+set colorcolumn=90      " Show column limit at line 89
 set number relativenumber " Hybrid number line
+set updatetime=300
+set shortmess+=c
 
 
 
@@ -48,20 +50,20 @@ set undodir=~/.vim/undodir
 set undofile
 
 " Quickfix
-augroup qf
-    au!
-    au FileType qf set nobuflisted
-    au WinEnter * if winnr('$') == 1 && &buftype == "quickfix"| bd |endif
-augroup END
+" augroup qf
+"     au!
+"     au FileType qf set nobuflisted
+"     au WinEnter * if winnr('$') == 1 && &buftype == "quickfix"| bd |endif
+" augroup END
 
 " Terminal
-augroup term
-    au!
-    au TerminalOpen * set nobuflisted
-augroup END
+" augroup term
+"     au!
+"     au TerminalOpen * set nobuflisted
+" augroup END
 
 
 
-" ================       Files        ====================
+" ================  File extensions   ====================
 au BufRead,BufNewFile *.pl set filetype=prolog
 au BufRead,BufNewFile *.egg set filetype=egg
