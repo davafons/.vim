@@ -41,6 +41,8 @@ set hlsearch            " Highlight matches
 set ignorecase          " Ignore cases on searches
 set smartcase           " Search lo/up case if no upper-case entered
 
+set wildignore+=*/__pycache__/*
+
 
 
 " ================       Buffer       ====================
@@ -48,13 +50,6 @@ set history=1000        " Remember more commands and search history
 set undolevels=1000     " A lot of undo levels
 set undodir=~/.vim/undodir
 set undofile
-
-" Quickfix
-" augroup qf
-"     au!
-"     au FileType qf set nobuflisted
-"     au WinEnter * if winnr('$') == 1 && &buftype == "quickfix"| bd |endif
-" augroup END
 
 " Terminal
 " augroup term

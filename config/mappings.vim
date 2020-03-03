@@ -43,6 +43,8 @@ else
   nnoremap <M-k> :bnext<CR>
 endif
 
+nnoremap <silent> <C-b> :lprev<CR>
+nnoremap <silent> <C-f> :lnext<CR>
 
 
 " ================  Shortcuts   ====================
@@ -97,8 +99,8 @@ nnoremap <silent> <Leader>v :NERDTreeFind<CR>
 
 " ===========  ALEFix       ==============
 nnoremap <F4> :ALEFix<CR>
-nmap <silent> <C-n> <Plug>(ale_next_wrap)
-nmap <silent> <C-p> <Plug>(ale_previous_wrap)
+nnoremap <silent> <expr> <C-n> &buftype ==# 'quickfix' ? ":cnext<CR>" : ':ALENextWrap<CR>'
+nnoremap <silent> <expr> <C-p> &buftype ==# 'quickfix' ? ":cprev<CR>" : ':ALEPreviousWrap<CR>'
 
 " ===========  indent-gui   ==============
 nnoremap <Leader>ig :IndentGuidesToggle<CR>
@@ -129,12 +131,20 @@ nnoremap <Leader>ig :IndentGuidesToggle<CR>
 
 
 " ===========  Coc          ==============
-" Use tab for trigger completion
+" Use tab for trigger completion with characters ahead and navigate.
+" NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
+" other plugin before putting this into your config.
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<TAB>" :
       \ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
 
 " Use <c-space> to trigger completion.
 inoremap <silent><expr> <c-space> coc#refresh()

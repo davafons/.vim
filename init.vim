@@ -5,7 +5,6 @@
 "  +----------------------------------------------+
 filetype plugin on
 
-
 " ================    Configuration   ====================
 source ~/.vim/config/general.vim
 source ~/.vim/config/plugins.vim

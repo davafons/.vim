@@ -15,6 +15,7 @@ let g:lightline = {
 \ }
 
 
+
 " ================   NERDTree    ====================
 let NERDTreeQuitOnOpen = 1          " Quit when opening file
 let NERDTreeAutoDeleteBuffer = 1    " Delete buffer when deleting files
@@ -76,22 +77,6 @@ let g:ale_python_mypy_options = '--ignore-missing-imports'
 let g:ale_python_pydocstyle_options = '--convention=google'
 
 
-"  ================ Gutentags     ====================
-" let g:gutentags_ctags_exclude = [
-"       \ '.mypy_cache'
-"       \ ]
-
-" let g:gutentags_generate_on_new = 1
-" let g:gutentags_generate_on_missing = 1
-" let g:gutentags_generate_on_write = 1
-" let g:gutentags_generate_on_empty_buffer = 0
-
-" let g:gutentags_ctags_extra_args = [
-"       \ '--tag-relative=yes',
-"       \ '--fields=+ailmnS',
-"       \ ]
-
-
 
 " ================ indent-guides ====================
 let g:indent_guides_auto_colors = 0
@@ -106,24 +91,3 @@ hi link CTagsClass Structure
 hi link cppStructure Statement
 hi link CTagsNamespace Typedef
 hi link cppModifier Special
-
-
-
-" ================ Vim-Lexical   ====================
-" augroup lexical
-"   autocmd!
-"   autocmd FileType * call lexical#init()
-" augroup END
-
-" let g:lexical#spell = 0
-" let g:lexical#spelllang = ['en_us', 'es_es']
-" let g:lexical#thesaurus = ['~/.vim/spell/mthesaur.txt']
-
-" let g:lexical#spell_key = '<Leader>ss'
-" let g:lexical#thesaurus_key = '<Leader>sa'
-" let g:lexical#dictonary_key = '<Leader>sd'
-
-
-
-" ================ Ditto         ====================
-" au FileType markdown,mkd DittoOn     " Turn on Ditto

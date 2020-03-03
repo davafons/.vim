@@ -21,22 +21,13 @@ Plug 'scrooloose/nerdtree'                  " Folder Tree view
 Plug 'ryanoasis/vim-devicons'               " Show icons in NerdTree
 Plug 'jeffkreeftmeijer/vim-numbertoggle'    " Hybrid number line
 Plug 'mhinz/vim-startify'                   " Start screen for vim
+Plug 'romainl/vim-qf'                       " Better quickfix configuration
+
 
 
 " ================ Lint/Compl   ====================
 Plug 'w0rp/ale'                             " Linting and Fixer
-
-" ================ Lint/Compl   ====================
 Plug 'neoclide/coc.nvim', { 'branch': 'release', 'do': { -> coc#util#install() } }
-
-
-
-
-" ================ Tags         ====================
-" Plug 'majutsushi/tagbar'                    " Tags window
-" Plug 'ludovicchabant/vim-gutentags'         " Auto generate tags from files
-" Plug 'vim-scripts/TagHighlight'             " Update highlight using tags
-" Plug 'mgedmin/python-imports.vim'           " Autoimport python modules
 
 
 
@@ -53,13 +44,6 @@ Plug 'junegunn/fzf.vim'                     " Fuzzy finder (for vim)
 
 
 
-" ================ Writing      ====================
-" Plug 'junegunn/goyo.vim'                    " Distraction-free writing
-" Plug 'reedes/vim-lexical'
-" Plug 'reedes/vim-wordy'
-" Plug 'dbmrq/vim-ditto'
-
-
 " ================ Mappings     ====================
 Plug 'cohama/lexima.vim'                    " Auto pair braces
 Plug 'tpope/vim-commentary'                 " Auto-comment with gc
@@ -67,6 +51,8 @@ Plug 'tpope/vim-surround'                   " Mappings to change braces
 Plug 'tpope/vim-repeat'                     " Repeat mappings from plugins
 Plug 'tpope/vim-abolish'                    " Easier word substitution
 Plug 'nacitar/a.vim'                        " Swap between .h and .cpp files
+Plug 'christoomey/vim-tmux-navigator'       " Mappings for navigate between tmux and vim
+                                            "   seamlessly
 
 
 call plug#end()
