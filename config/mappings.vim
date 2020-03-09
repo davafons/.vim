@@ -103,14 +103,6 @@ nnoremap <Leader>ig :IndentGuidesToggle<CR>
 
 
 
-" =========== Asyncomplete  ==============
-inoremap <expr> <tab>   pumvisible() ? "\<c-n>" : "\<tab>"
-inoremap <expr> <s-tab> pumvisible() ? "\<c-p>" : "\<s-tab>"
-inoremap <expr> <cr>    pumvisible() ? "\<c-y>" : "\<cr>"
-
-imap <c-space> <plug>(asyncomplete_force_refresh)
-
-
 " ===========  FZF          ==============
 nnoremap <Leader>wt :Tags<CR>
 nnoremap <Leader>wf :Files<CR>

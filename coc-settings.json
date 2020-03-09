@@ -1,0 +1,8 @@
+{
+  "diagnostic.enable": false,
+
+  "python.jediEnabled": false,
+  "python.venvPath": "~/.cache/pypoetry/virtualenvs",
+
+  "suggest.autoTrigger": "always"
+}
