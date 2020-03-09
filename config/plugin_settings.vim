@@ -9,11 +9,24 @@
 let g:lightline = {
   \ 'colorscheme': 'solarized',
   \ 'active': {
-  \   'left': [ [ 'mode', 'paste' ],
-  \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+  \   'left': [ [ 'mode', 'paste'],
+  \             [ 'poetv', 'readonly', 'filename', 'gitbranch', 'gitstatus', 'modified' ] ]
+  \ },
+  \ 'component_function': {
+  \   'poetv': 'VenvName',
+  \   'gitstatus': 'GitStatus',
+  \   'gitbranch': 'FugitiveHead',
   \ },
 \ }
 
+function! VenvName()
+  return poetv#statusline()
+endfunction
+
+function! GitStatus()
+  let [a,m,r] = GitGutterGetHunkSummary()
+  return printf('+%d ~%d -%d', a, m, r)
+endfunction
 
 
 " ================   NERDTree    ====================
@@ -55,7 +68,8 @@ let g:ale_linters = {
       \ 'python': ['flake8', 'mypy', 'pylint'],
       \ 'javascript': ['eslint'],
       \ 'cpp': ['clangcheck'],
-      \ 'cuda': ['nvcc']
+      \ 'cuda': ['nvcc'],
+      \ 'markdown': ['remark_lint']
       \ }
 
 let g:ale_fixers = {

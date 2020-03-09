@@ -17,6 +17,7 @@ Plug 'lifepillar/vim-solarized8'            " Solarized dark theme
 " ================ Interface    ====================
 Plug 'itchyny/lightline.vim'                " Status bar for vim
 Plug 'airblade/vim-gitgutter'               " Show git sign column
+Plug 'tpope/vim-fugitive'                   " Wrapper for git inside vim
 Plug 'scrooloose/nerdtree'                  " Folder Tree view
 Plug 'ryanoasis/vim-devicons'               " Show icons in NerdTree
 Plug 'jeffkreeftmeijer/vim-numbertoggle'    " Hybrid number line
@@ -28,11 +29,13 @@ Plug 'romainl/vim-qf'                       " Better quickfix configuration
 " ================ Lint/Compl   ====================
 Plug 'w0rp/ale'                             " Linting and Fixer
 Plug 'neoclide/coc.nvim', { 'branch': 'release', 'do': { -> coc#util#install() } }
+Plug 'janko-m/vim-test'                     " Easier testing commands
+Plug 'petobens/poet-v'
 
 
 
 " ================ Style/Format ====================
-Plug 'sheerun/vim-polyglot'                 " Syntax highlighting for + languages
+Plug 'sheerun/vim-polyglot'                 " Syntax highlighting for more languages
 Plug 'ntpeters/vim-better-whitespace'       " Highlight trailing whitespaces
 Plug 'nathanaelkane/vim-indent-guides'      " Show indent guides
 Plug 'ap/vim-buftabline'                    " Show buffers as a tabline
@@ -52,7 +55,6 @@ Plug 'tpope/vim-repeat'                     " Repeat mappings from plugins
 Plug 'tpope/vim-abolish'                    " Easier word substitution
 Plug 'nacitar/a.vim'                        " Swap between .h and .cpp files
 Plug 'christoomey/vim-tmux-navigator'       " Mappings for navigate between tmux and vim
-                                            "   seamlessly
 
 
 call plug#end()
