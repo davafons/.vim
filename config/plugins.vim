@@ -23,6 +23,7 @@ Plug 'ryanoasis/vim-devicons'               " Show icons in NerdTree
 Plug 'jeffkreeftmeijer/vim-numbertoggle'    " Hybrid number line
 Plug 'mhinz/vim-startify'                   " Start screen for vim
 Plug 'romainl/vim-qf'                       " Better quickfix configuration
+Plug 'tpope/vim-dispatch'                   " Better async building
 
 
 
@@ -55,6 +56,7 @@ Plug 'tpope/vim-repeat'                     " Repeat mappings from plugins
 Plug 'tpope/vim-abolish'                    " Easier word substitution
 Plug 'nacitar/a.vim'                        " Swap between .h and .cpp files
 Plug 'christoomey/vim-tmux-navigator'       " Mappings for navigate between tmux and vim
+Plug 'jremmen/vim-ripgrep'
 
 
 call plug#end()

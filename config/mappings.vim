@@ -186,7 +186,7 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 
 
-" ===========  fzf          ==============
+" ===========  Coc          ==============
 " Remap for do codeAction of selected region
 function! s:cocActionsOpenFromSelected(type) abort
   execute 'CocCommand actions.open ' . a:type
@@ -199,3 +199,11 @@ nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<C
 " ===========  fzf          ==============
 nnoremap <Leader>wt :Tags<CR>
 nnoremap <Leader>wf :Files<CR>
+
+
+
+" ===========  fzf          ==============
+nnoremap <Leader>tf :TestFile<CR>
+nnoremap <Leader>tn :TestNearest<CR>
+nnoremap <Leader>ts :TestSuite<CR>
+nnoremap <Leader>tv :TestVisit<CR>

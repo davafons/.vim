@@ -49,17 +49,22 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 
 
-" ================ Buftabline    ====================
+" ================ Buftabline     ====================
 let g:buftabline_show = 1
 let g:buftabline_numbers = 1
 
 
 
+"  ================ vim-test      ====================
+let test#strategy = "dispatch"
+
+
+
 "  ================ ALE           ====================
-let g:ale_open_list = 1
+" let g:ale_open_list = 1
 let g:ale_list_window_size = 7
-let g:ale_set_loclist = 0
-let g:ale_set_quickfix = 1
+" let g:ale_set_loclist = 0
+" let g:ale_set_quickfix = 1
 
 let g:ale_fix_on_save = 1
 
