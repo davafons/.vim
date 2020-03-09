@@ -49,6 +49,16 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 
 
+
+" ================ vim-lsp        ====================
+let g:lsp_diagnostics_enabled = 0
+let g:lsp_signs_enabled = 0
+
+set omnifunc=lsp#complete
+
+
+
+
 " ================ Buftabline     ====================
 let g:buftabline_show = 1
 let g:buftabline_numbers = 1
@@ -61,12 +71,17 @@ let test#strategy = "dispatch"
 
 
 "  ================ ALE           ====================
-" let g:ale_open_list = 1
-let g:ale_list_window_size = 7
-" let g:ale_set_loclist = 0
-" let g:ale_set_quickfix = 1
+let g:ale_enabled = 1
+let g:ale_list_window_size = 5
+let g:ale_set_loclist = 1
+let g:ale_set_quickfix = 0
 
-let g:ale_fix_on_save = 1
+let g:ale_open_list = 1
+
+augroup CloseLoclistWindowGroup
+  autocmd!
+  autocmd QuitPre * if empty(&buftype) | lclose | endif
+augroup END
 
 let g:ale_linters = {
       \ 'java': ['javac'],

@@ -28,8 +28,13 @@ Plug 'tpope/vim-dispatch'                   " Better async building
 
 
 " ================ Lint/Compl   ====================
+Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+
 Plug 'w0rp/ale'                             " Linting and Fixer
-Plug 'neoclide/coc.nvim', { 'branch': 'release', 'do': { -> coc#util#install() } }
 Plug 'janko-m/vim-test'                     " Easier testing commands
 Plug 'petobens/poet-v'
 
