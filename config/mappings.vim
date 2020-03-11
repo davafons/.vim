@@ -58,8 +58,8 @@ nnoremap <silent> <Leader>ys :source $MYVIMRC<CR>
 "--- Disable search highlight
 nnoremap <silent> <Leader><space> :nohlsearch<CR>
 
-"--- Easy delete current buffer
-nnoremap <Leader>q :bd<CR>
+"--- Easy close current window
+nnoremap <Leader>q <C-w>q
 
 "--- Remove trailing spaces
 nnoremap <silent> <F3> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
