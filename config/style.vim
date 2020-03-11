@@ -18,6 +18,9 @@ endif
 set background=dark
 silent! colorscheme solarized8
 
+hi QuickFixLine guibg=0
+
+
 
 " ================  Buftabline   ====================
 hi link BufTabLineCurrent LightlineLeft_normal_1
