@@ -58,7 +58,7 @@ nnoremap <silent> <Leader>ys :source $MYVIMRC<CR>
 "--- Disable search highlight
 nnoremap <silent> <Leader><space> :nohlsearch<CR>
 
-"--- Easy delete current split
+"--- Easy close current split
 nnoremap <Leader>q <C-w>q
 
 "--- Remove trailing spaces
