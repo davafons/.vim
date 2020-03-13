@@ -48,8 +48,8 @@ nnoremap <silent> <C-f> :lnext<CR>
 " ================  Shortcuts   ====================
 
 "--- Save with ctrl+s
-nmap <c-s> :w<CR>
-imap <c-s> <Esc>:w<CR>a
+nnoremap <c-s> :w<CR>
+inoremap <c-s> <Esc>:w<CR>a
 
 "--- Quickly edit/reload the vimrc file
 nnoremap <silent> <Leader>ye :e $MYVIMRC<CR>
@@ -58,8 +58,8 @@ nnoremap <silent> <Leader>ys :source $MYVIMRC<CR>
 "--- Disable search highlight
 nnoremap <silent> <Leader><space> :nohlsearch<CR>
 
-"--- Easy delete current buffer
-nnoremap <Leader>q :bd<CR>
+"--- Easy delete current split
+nnoremap <Leader>q <C-w>q
 
 "--- Remove trailing spaces
 nnoremap <silent> <F3> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
@@ -69,12 +69,12 @@ inoremap <C-c> <Esc>
 
 "--- Use system clipboard with leader
 if has("clipboard")
-  noremap <Leader>y "+y
-  noremap <Leader>p "+p
+  nnoremap <Leader>y "+y
+  nnoremap <Leader>p "+p
 endif
 
 " Enable/disable spelling check on current buffer
-map <silent> <F2> :setlocal spell!<CR>
+nnoremap <silent> <F2> :setlocal spell!<CR>
 
 "--- Shortcuts for split window
 nnoremap <silent> <Leader>s :vsplit<CR>
@@ -95,8 +95,8 @@ nnoremap <silent> <Leader>v :NERDTreeFind<CR>
 
 " ===========  ALEFix       ==============
 nnoremap <F4> :ALEFix<CR>
-nmap <silent> <C-n> <Plug>(ale_previous_wrap)
-nmap <silent> <C-p> <Plug>(ale_next_wrap)
+nnoremap <silent> <C-n> <Plug>(ale_previous_wrap)
+nnoremap <silent> <C-p> <Plug>(ale_next_wrap)
 
 " ===========  indent-gui   ==============
 nnoremap <Leader>ig :IndentGuidesToggle<CR>
