@@ -68,10 +68,8 @@ nnoremap <silent> <F3> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :noh
 inoremap <C-c> <Esc>
 
 "--- Use system clipboard with leader
-if has("clipboard")
-  nnoremap <Leader>y "+y
-  nnoremap <Leader>p "+p
-endif
+noremap <Leader>y "+y
+noremap <Leader>p "+p
 
 " Enable/disable spelling check on current buffer
 nnoremap <silent> <F2> :setlocal spell!<CR>
