@@ -1,8 +1,30 @@
 {
+  "suggest.autoTrigger": "always",
+  "suggest.numberSelect": true,
+  "suggest.triggerCompletionWait": 50,
+
   "diagnostic.enable": false,
+
+  "codeLens.enable": true,
+
+  "coc.preferences.extensionUpdateCheck": "daily",
 
   "python.jediEnabled": false,
   "python.venvPath": "~/.cache/pypoetry/virtualenvs",
 
-  "suggest.autoTrigger": "always"
+  "languageserver": {
+    "ccls": {
+      "command": "ccls",
+      "filetypes": ["c", "cpp", "cuda", "objc", "objcpp"],
+      "rootPatterns": [".ccls-root", "compile_commands.json"],
+      "initializationOptions": {
+        "cache": {
+          "directory": ".ccls-cache"
+        },
+        "client": {
+          "snippetSupport": true
+        }
+      }
+    }
+  }
 }

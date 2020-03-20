@@ -27,8 +27,8 @@ set hidden              " Hide buffers instead of closing
 set title               " Show terminal's title
 set backspace=indent,eol,start  " God-mode backspace
 set noerrorbells        " No error beep
-set textwidth=89        " Force wrap lines at 89
-set colorcolumn=90      " Show column limit at line 89
+set textwidth=88        " Force wrap lines at 89
+set colorcolumn=89      " Show column limit at line 89
 set number relativenumber " Hybrid number line
 set updatetime=300
 set shortmess+=c

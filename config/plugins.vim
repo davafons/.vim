@@ -25,6 +25,7 @@ Plug 'mhinz/vim-startify'                   " Start screen for vim
 Plug 'romainl/vim-qf'                       " Better quickfix configuration
 Plug 'tpope/vim-dispatch'                   " Better async building
 Plug 'tmux-plugins/vim-tmux-focus-events'
+Plug 'gioele/vim-autoswap'
 
 
 
