@@ -92,7 +92,7 @@ augroup END
 
 let g:ale_linters = {
       \ 'java': ['javac'],
-      \ 'python': ['flake8', 'mypy', 'pylint'],
+      \ 'python': ['flake8', 'pylint'],
       \ 'javascript': ['eslint'],
       \ 'cpp': ['clangcheck'],
       \ 'cuda': ['nvcc'],
@@ -107,6 +107,8 @@ let g:ale_fixers = {
       \ 'sh': ['shfmt'],
       \ 'javascript': ['prettier'],
       \ 'java': ['google_java_format'],
+      \ 'rust': ['rustfmt'],
+      \ 'xml': ['xmllint']
       \ }
 
 let g:ale_echo_msg_format = '[%linter%] %[code] %%s'

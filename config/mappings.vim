@@ -45,8 +45,8 @@ endif
 " ================  Shortcuts   ====================
 
 "--- Save with ctrl+s
-nnoremap <c-s> :w<CR>
-inoremap <c-s> <Esc>:w<CR>a
+nnoremap <silent> <c-s> :w<CR>
+inoremap <silent> <c-s> <Esc>:w<CR>a
 
 "--- Quickly edit/reload the vimrc file
 nnoremap <silent> <Leader>ye :e $MYVIMRC<CR>

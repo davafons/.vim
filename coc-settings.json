@@ -1,6 +1,5 @@
 {
   "suggest.autoTrigger": "always",
-  "suggest.numberSelect": true,
   "suggest.triggerCompletionWait": 50,
 
   "diagnostic.enable": false,
@@ -11,6 +10,8 @@
 
   "python.jediEnabled": false,
   "python.venvPath": "~/.cache/pypoetry/virtualenvs",
+
+  "tsserver.npm": "/usr/local/bin/npm",
 
   "languageserver": {
     "ccls": {
