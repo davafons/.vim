@@ -4,7 +4,7 @@
 
   "diagnostic.enable": false,
 
-  "codeLens.enable": true,
+  "codeLens.enable": false,
 
   "coc.preferences.extensionUpdateCheck": "daily",
 
