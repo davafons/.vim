@@ -10,22 +10,17 @@ let g:lightline = {
   \ 'colorscheme': 'solarized',
   \ 'active': {
   \   'left': [ [ 'mode', 'paste'],
-  \             [ 'poetv', 'readonly', 'filename', 'gitbranch', 'gitstatus', 'modified'] ],
+  \             [ 'readonly', 'filename', 'gitbranch', 'gitstatus', 'modified'] ],
   \   'right': [ [ 'lineinfo' ],
   \            [ 'percent' ],
   \            [ 'cocstatus', 'fileformat', 'fileencoding', 'filetype' ] ]
   \ },
   \ 'component_function': {
-  \   'poetv': 'VenvName',
   \   'gitstatus': 'GitStatus',
   \   'gitbranch': 'FugitiveHead',
   \   'cocstatus': 'StatusDiagnostic'
   \ },
 \ }
-
-function! VenvName()
-  return poetv#statusline()
-endfunction
 
 function! GitStatus()
   let [a,m,r] = GitGutterGetHunkSummary()

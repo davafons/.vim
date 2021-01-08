@@ -8,6 +8,8 @@
 
   "coc.preferences.extensionUpdateCheck": "daily",
 
+  "java.jdt.ls.vmargs": "-javaagent:~/bin/lombok.jar -Xbootclasspath/a:~/bin/lombok.jar",
+
   "python.jediEnabled": false,
   "python.venvPath": "~/.cache/pypoetry/virtualenvs",
 

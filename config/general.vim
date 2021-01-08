@@ -62,3 +62,28 @@ set undofile
 " ================  File extensions   ====================
 au BufRead,BufNewFile *.pl set filetype=prolog
 au BufRead,BufNewFile *.egg set filetype=egg
+
+
+function! BrazilWorkspaceRoot()
+  let l:working_directory = getcwd()
+  let l:workspace_root = split(l:working_directory, "/")[0:4]
+  return "/" . join(l:workspace_root, "/")
+endfunction
+
+function! BrazilOpenJDKLocation()
+  let l:workspace_directory=BrazilWorkspaceRoot()
+  let l:jdk_path=""
+  if (isdirectory(l:workspace_directory."/env/OpenJDK8-1.1"))
+      let l:jdk_path=l:workspace_directory."/env/OpenJDK8-1.1"
+  endif
+
+  if (isdirectory(l:workspace_directory."/env/JDK8-1.0"))
+      let l:jdk_path=l:workspace_directory."/env/JDK8-1.0"
+  endif
+  return l:jdk_path . "/runtime/jdk1.8/"
+endfunction
+
+function! SetBrazilJDKHome()
+  let $JDK_HOME=BrazilOpenJDKLocation()
+endfunction
+call SetBrazilJDKHome()

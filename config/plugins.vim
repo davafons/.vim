@@ -34,12 +34,13 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'w0rp/ale'                             " Linting and Fixer
 Plug 'janko-m/vim-test'                     " Easier testing commands
-Plug 'petobens/poet-v'
+" Plug 'petobens/poet-v'
 
 
 
 " ================ Style/Format ====================
 Plug 'sheerun/vim-polyglot'                 " Syntax highlighting for more languages
+Plug 'jasdel/vim-smithy'                    " Smithy IDL language syntax highlighting
 Plug 'ntpeters/vim-better-whitespace'       " Highlight trailing whitespaces
 Plug 'nathanaelkane/vim-indent-guides'      " Show indent guides
 Plug 'ap/vim-buftabline'                    " Show buffers as a tabline
