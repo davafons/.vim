@@ -19,5 +19,6 @@ source ~/.vim/config/style.vim
 " ftplugin/prolog.vim
 " ftplugin/python.vim
 " ftplugin/javascript.vim
+" ftplugin/yaml.vim
 
 " after/plugin/abolish.vim

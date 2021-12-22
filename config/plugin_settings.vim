@@ -66,6 +66,11 @@ let g:ale_set_quickfix = 0
 
 let g:ale_open_list = 1
 
+let g:ale_sign_error = '✘'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+
+let g:ale_lint_on_text_changed = 'never'
+
 augroup CloseLoclistWindowGroup
   autocmd!
   autocmd QuitPre * if empty(&buftype) | lclose | endif
@@ -77,7 +82,8 @@ let g:ale_linters = {
       \ 'javascript': ['eslint'],
       \ 'cpp': ['clangcheck'],
       \ 'cuda': ['nvcc'],
-      \ 'markdown': ['remark_lint']
+      \ 'markdown': ['remark_lint'],
+      \ 'yaml': ['yamllint']
       \ }
 
 let g:ale_fixers = {
@@ -89,10 +95,9 @@ let g:ale_fixers = {
       \ 'javascript': ['prettier'],
       \ 'java': ['google_java_format'],
       \ 'rust': ['rustfmt'],
-      \ 'xml': ['xmllint']
+      \ 'xml': ['xmllint'],
+      \ 'yaml': ['yamllint']
       \ }
-
-let g:ale_echo_msg_format = '[%linter%] %[code] %%s'
 
 let g:ale_cuda_nvcc_options = '--std=c++14'
 

@@ -30,7 +30,7 @@ Plug 'gioele/vim-autoswap'
 
 
 " ================ Lint/Compl   ====================
-" Plug 'w0rp/ale'                             " Linting and Fixer
+Plug 'w0rp/ale'                             " Linting and Fixer
 " Plug 'janko-m/vim-test'                     " Easier testing commands
 
 
