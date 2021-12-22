@@ -13,31 +13,17 @@ let g:lightline = {
   \             [ 'readonly', 'filename', 'gitbranch', 'gitstatus', 'modified'] ],
   \   'right': [ [ 'lineinfo' ],
   \            [ 'percent' ],
-  \            [ 'cocstatus', 'fileformat', 'fileencoding', 'filetype' ] ]
+  \            [ 'fileformat', 'fileencoding', 'filetype' ] ]
   \ },
   \ 'component_function': {
   \   'gitstatus': 'GitStatus',
-  \   'gitbranch': 'FugitiveHead',
-  \   'cocstatus': 'StatusDiagnostic'
+  \   'gitbranch': 'FugitiveHead'
   \ },
 \ }
 
 function! GitStatus()
   let [a,m,r] = GitGutterGetHunkSummary()
   return printf('+%d ~%d -%d', a, m, r)
-endfunction
-
-function! StatusDiagnostic() abort
-  let info = get(b:, 'coc_diagnostic_info', {})
-  if empty(info) | return '' | endif
-  let msgs = []
-  if get(info, 'error', 0)
-    call add(msgs, 'E' . info['error'])
-  endif
-  if get(info, 'warning', 0)
-    call add(msgs, 'W' . info['warning'])
-  endif
-  return join(msgs, ' ') . ' ' . get(g:, 'coc_status', '')
 endfunction
 
 
@@ -129,19 +115,3 @@ hi link CTagsClass Structure
 hi link cppStructure Statement
 hi link CTagsNamespace Typedef
 hi link cppModifier Special
-
-
-
-" ================ Coc           ====================
-let g:coc_global_extensions = [
-      \ "coc-json",
-      \ "coc-python",
-      \ "coc-actions",
-      \ "coc-cmake"
-      \ ]
-
-let g:coc_config_home = expand("~/.vim")
-
-" Highlight the symbol and its references when holding the cursor.
-autocmd CursorHold * silent call CocActionAsync('highlight')
-

@@ -30,11 +30,8 @@ Plug 'gioele/vim-autoswap'
 
 
 " ================ Lint/Compl   ====================
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-Plug 'w0rp/ale'                             " Linting and Fixer
-Plug 'janko-m/vim-test'                     " Easier testing commands
-" Plug 'petobens/poet-v'
+" Plug 'w0rp/ale'                             " Linting and Fixer
+" Plug 'janko-m/vim-test'                     " Easier testing commands
 
 
 
