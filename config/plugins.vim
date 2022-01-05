@@ -42,8 +42,7 @@ Plug 'ntpeters/vim-better-whitespace'       " Highlight trailing whitespaces
 Plug 'nathanaelkane/vim-indent-guides'      " Show indent guides
 Plug 'ap/vim-buftabline'                    " Show buffers as a tabline
 Plug 'junegunn/fzf', {
-      \ 'dir': '~/.fzf',
-      \ 'do': './install --all'
+      \ 'do': { -> 'fzf#install()' }
       \ }                                   " Fuzzy finder
 Plug 'junegunn/fzf.vim'                     " Fuzzy finder (for vim)
 
