@@ -14,10 +14,10 @@ nnoremap <silent> j gj
 nnoremap <silent> k gk
 
 "--- Faster window navigation
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+nnoremap <C-h> <C-h>h
+nnoremap <C-j> <C-j>j
+nnoremap <C-k> <C-k>k
+nnoremap <C-l> <C-l>l
 
 "--- Move windows
 nnoremap <C-w><C-h> <C-w>H
