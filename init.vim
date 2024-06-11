@@ -12,8 +12,6 @@ source ~/.vim/config/plugin_settings.vim
 source ~/.vim/config/mappings.vim
 source ~/.vim/config/style.vim
 
-
-
 " ================    Ftplugin        ====================
 " ftplugin/java.vim
 " ftplugin/prolog.vim

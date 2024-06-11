@@ -14,8 +14,6 @@ set autoindent          " Enable auto indentation
 set copyindent          " Copy previous indentation on auto indenting
 set shiftround          " Use multiples of shiftwidth when indenting
 
-
-
 " ================  UI Configuration  ====================
 set cursorline          " Highlight current line
 set showcmd             " Show as commands are typed
@@ -33,8 +31,6 @@ set number relativenumber " Hybrid number line
 set updatetime=300
 set shortmess+=c
 
-
-
 " ================     Searching      ====================
 set incsearch           " Search as characters are entered
 set hlsearch            " Highlight matches
@@ -43,47 +39,12 @@ set smartcase           " Search lo/up case if no upper-case entered
 
 set wildignore+=*/__pycache__/*
 
-
-
 " ================       Buffer       ====================
 set history=1000        " Remember more commands and search history
 set undolevels=1000     " A lot of undo levels
 set undodir=~/.vim/undodir
 set undofile
 
-" Terminal
-" augroup term
-"     au!
-"     au TerminalOpen * set nobuflisted
-" augroup END
-
-
-
 " ================  File extensions   ====================
 au BufRead,BufNewFile *.pl set filetype=prolog
 au BufRead,BufNewFile *.egg set filetype=egg
-
-
-function! BrazilWorkspaceRoot()
-  let l:working_directory = getcwd()
-  let l:workspace_root = split(l:working_directory, "/")[0:4]
-  return "/" . join(l:workspace_root, "/")
-endfunction
-
-function! BrazilOpenJDKLocation()
-  let l:workspace_directory=BrazilWorkspaceRoot()
-  let l:jdk_path=""
-  if (isdirectory(l:workspace_directory."/env/OpenJDK8-1.1"))
-      let l:jdk_path=l:workspace_directory."/env/OpenJDK8-1.1"
-  endif
-
-  if (isdirectory(l:workspace_directory."/env/JDK8-1.0"))
-      let l:jdk_path=l:workspace_directory."/env/JDK8-1.0"
-  endif
-  return l:jdk_path . "/runtime/jdk1.8/"
-endfunction
-
-function! SetBrazilJDKHome()
-  let $JDK_HOME=BrazilOpenJDKLocation()
-endfunction
-call SetBrazilJDKHome()
