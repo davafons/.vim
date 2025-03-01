@@ -53,3 +53,14 @@ vim.opt.undodir = "~/.vim/undodir" -- Directory to store undo files
 
 -- ================  File extensions   ====================
 vim.cmd([[ au BufRead,BufNewFile *.egg set filetype=egg ]])
+
+-- Correct filetype for docker-compose files
+local function set_filetype(pattern, filetype)
+  vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+    pattern = pattern,
+    command = "set filetype=" .. filetype,
+  })
+end
+
+set_filetype({ "docker-compose.yml" }, "yaml.docker-compose")
+set_filetype({ "docker-compose.yaml" }, "yaml.docker-compose")

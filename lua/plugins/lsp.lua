@@ -65,7 +65,6 @@ return {
       },
     })
 
-    -- TODO: Deprecated, replace
     vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
       border = "rounded",
     })
@@ -76,13 +75,18 @@ return {
 
     require("mason").setup()
     require("mason-lspconfig").setup({
-      ensure_installed = { "lua_ls" },
+      ensure_installed = {
+        "lua_ls",
+        "docker_compose_language_service",
+        "dockerls",
+        "bashls",
+      },
       handlers = {
         function(server_name)
           require("lspconfig")[server_name].setup({})
         end,
 
-        -- lsp_zero.default_setup,
+        -- Lua
         lua_ls = function()
           require("lspconfig").lua_ls.setup({
             on_init = function(client)
@@ -117,6 +121,28 @@ return {
               Lua = {},
             },
           })
+        end,
+        -- Docker Compose
+        docker_compose_language_service = function()
+          require("lspconfig").docker_compose_language_service.setup({})
+        end,
+        -- Dockerfile
+        dockerls = function()
+          require("lspconfig").dockerls.setup({
+            settings = {
+              docker = {
+                languageserver = {
+                  formatter = {
+                    ignoreMultilineInstructions = true,
+                  },
+                },
+              },
+            },
+          })
+        end,
+        -- Bash
+        bashls = function()
+          require("lspconfig").bashls.setup({})
         end,
       },
     })
