@@ -80,6 +80,13 @@ return {
         "docker_compose_language_service",
         "dockerls",
         "bashls",
+        "kotlin_language_server",
+        "groovyls",
+        "jdtls",
+        "jedi_language_server",
+        "eslint",
+        "ts_ls",
+        "astro",
       },
       handlers = {
         function(server_name)
@@ -144,7 +151,42 @@ return {
         bashls = function()
           require("lspconfig").bashls.setup({})
         end,
+        -- Kotlin
+        kotlin_language_server = function()
+          require("lspconfig").kotlin_language_server.setup({})
+        end,
+        -- Groovyls
+        groovyls = function()
+          require("lspconfig").groovyls.setup({})
+        end,
+        -- Jdtls (Java)
+        jdtls = function()
+          require("lspconfig").jdtls.setup({})
+        end,
+        -- Jedi (Python)
+        jedi_language_server = function()
+          require("lspconfig").jedi_language_server.setup({})
+        end,
+        -- Eslint (Javascript)
+        eslint = function()
+          require("lspconfig").eslint.setup({
+            on_attach = function(_, bufnr)
+              vim.api.nvim_create_autocmd("BufWritePre", {
+                buffer = bufnr,
+                command = "EslintFixAll",
+              })
+            end,
+          })
+        end,
       },
+      -- ts_ls (Typescript)
+      ts_ls = function()
+        require("lspconfig").ts_ls.setup({})
+      end,
+      -- astro
+      astro = function()
+        require("astro").astro.setup({})
+      end,
     })
   end,
 }
