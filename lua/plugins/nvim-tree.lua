@@ -2,11 +2,33 @@ return {
   "nvim-tree/nvim-tree.lua",
   dependencies = "nvim-tree/nvim-web-devicons",
   config = function()
-    require("nvim-tree").setup()
-    -- custom mappings
+    require("nvim-tree").setup({})
+
+    vim.g.loaded_netrw = 1
+    vim.g.loaded_netrwPlugin = 1
+
+    -- Custom Mappings
     vim.keymap.set("n", "<Leader>f", ":NvimTreeToggle<CR>")
     vim.keymap.set("n", "<Leader>v", ":NvimTreeFindFile<CR>")
 
+    -- Open the tree on load
+    local function open_nvim_tree(data)
+      -- buffer is a real file on the disk
+      local real_file = vim.fn.filereadable(data.file) == 1
+
+      -- buffer is a [No Name]
+      local no_name = data.file == "" and vim.bo[data.buf].buftype == ""
+
+      if not real_file and not no_name then
+        return
+      end
+
+      -- open the tree, find the file but don't focus it
+      require("nvim-tree.api").tree.toggle({ focus = false, find_file = true })
+    end
+    vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
+
+    -- Close vim automatically when nvim tree is the last window open
     local function tab_win_closed(winnr)
       local api = require("nvim-tree.api")
       local tabnr = vim.api.nvim_win_get_tabpage(winnr)
