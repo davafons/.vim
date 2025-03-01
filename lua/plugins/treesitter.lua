@@ -4,7 +4,7 @@ return {
   build = ":TSUpdate",
 
   config = function()
-    require 'nvim-treesitter.configs'.setup {
+    require("nvim-treesitter.configs").setup({
       ensure_installed = {},
 
       -- Install languages synchronously (only applied to `ensure_installed`)
@@ -18,11 +18,11 @@ return {
       auto_install = true,
 
       autopairs = {
-        enable = true
+        enable = true,
       },
 
       indent = {
-        enable = true
+        enable = true,
       },
 
       highlight = {
@@ -52,6 +52,6 @@ return {
         enable = true,
         enable_autocmd = false,
       },
-    }
-  end
+    })
+  end,
 }

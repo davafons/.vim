@@ -11,7 +11,7 @@ $ git clone https://github.com/davafons/nvim
 Then, run:
 ```sh
 :Lazy
-``` 
+```
 
 ## License
 
