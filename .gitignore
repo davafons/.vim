@@ -1,9 +1,2 @@
-autoload/
-plugged/
 undodir/
-session/
-Ditto/
-spell/
-
 *.swp
-tags
