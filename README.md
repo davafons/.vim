@@ -4,7 +4,7 @@ Personal nvim configuration for Linux
 ## Install
 
 ```sh
-# cd .config
+$ cd .config
 $ git clone https://github.com/davafons/nvim
 ```
 
