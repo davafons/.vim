@@ -25,20 +25,13 @@ nnoremap <C-w><C-k> <C-w>K
 nnoremap <C-w><C-l> <C-w>L
 
 "--- Change window size
+"TODO: Remove?
 nnoremap <C-w><C-m> <C-w>\| <C-W>_
 nnoremap <C-w><C-e> <C-w>=
 
 "--- Move to next/prev buffer
-if has("nvim")
-  nnoremap <A-j> :bprev<CR>
-  nnoremap <A-k> :bnext<CR>
-else
-  " Hack for making Alt modifier work
-  execute "set <M-j>=\ej"
-  execute "set <M-k>=\ek"
-  nnoremap <M-j> :bprev<CR>
-  nnoremap <M-k> :bnext<CR>
-endif
+nnoremap <A-j> :bprev<CR>
+nnoremap <A-k> :bnext<CR>
 
 
 " ================  Shortcuts   ====================
@@ -49,9 +42,6 @@ nnoremap <silent> <Leader>ys :source $MYVIMRC<CR>
 
 "--- Disable search highlight
 nnoremap <silent> <Leader><space> :nohlsearch<CR>
-
-"--- Easy close current split
-nnoremap <Leader>q <C-w>q
 
 "--- Easy close current buffer
 nnoremap <Leader>bd :bd<CR>
@@ -66,19 +56,14 @@ inoremap <C-c> <Esc>
 noremap <Leader>y "+y
 noremap <Leader>p "+p
 
-" Enable/disable spelling check on current buffer
-nnoremap <silent> <F2> :setlocal spell!<CR>
-
 "--- Shortcuts for split window
 nnoremap <silent> <Leader>s :vsplit<CR>
 nnoremap <silent> <Leader>S :split<CR>
 
-"--- Get highlight group under the cursor
+"--- Get highlight group under the cursor (For sy)
 nnoremap <F6> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
       \ . synIDattr(synID(line("."),col("."),0),"name") . "> lo<"
       \ . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
-
-" ================   Plugins    ====================
 
 " ===========   NERDTree    ===============
 nnoremap <silent> <Leader>f :NERDTreeToggle<Enter>
