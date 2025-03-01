@@ -9,10 +9,10 @@ vim.keymap.set("n", "j", "gj", { silent=true, noremap=true })
 vim.keymap.set("n", "k", "gk", { silent=true, noremap=true })
 
 -- Faster window navigation
-vim.keymap.set("n", "<C-h>", "<C-h>h", opts)
-vim.keymap.set("n", "<C-j>", "<C-j>j", opts)
-vim.keymap.set("n", "<C-k>", "<C-k>k", opts)
-vim.keymap.set("n", "<C-l>", "<C-l>l", opts)
+vim.keymap.set("n", "<C-h>", "<C-w>h", opts)
+vim.keymap.set("n", "<C-j>", "<C-w>j", opts)
+vim.keymap.set("n", "<C-k>", "<C-w>k", opts)
+vim.keymap.set("n", "<C-l>", "<C-w>l", opts)
 
 -- Move windows
 vim.keymap.set("n", "<C-w><C-h>", "<C-w>H", opts)
