@@ -86,6 +86,7 @@ return {
         "eslint",
         "ts_ls",
         "astro",
+        "jdtls",
       },
       handlers = {
         function(server_name)
@@ -173,6 +174,9 @@ return {
             end,
           })
         end,
+        -- jdtls = function ()
+        --   -- Disabled from Mason, only used for install
+        -- end
       },
       -- ts_ls (Typescript)
       ts_ls = function()

@@ -1,10 +1,8 @@
 return {
   "mfussenegger/nvim-jdtls",
   config = function()
-    local config = {
-      cmd = { "jdtls" },
-      root_dir = vim.fs.dirname(vim.fs.find({ "gradlew", ".git", "mvnw" }, { upward = true })[1]),
-    }
-    require("jdtls").start_or_attach(config)
+    vim.cmd([[ nnoremap <Leader>co <Cmd>lua require'jdtls'.organize_imports()<CR> ]])
+    vim.cmd([[ nnoremap <leader>ct <Cmd>lua require'jdtls'.test_class()<CR> ]])
+    vim.cmd([[ nnoremap <leader>cn <Cmd>lua require'jdtls'.test_nearest_method()<CR> ]])
   end,
 }
