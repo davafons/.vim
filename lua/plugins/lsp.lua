@@ -82,7 +82,6 @@ return {
         "bashls",
         "kotlin_language_server",
         "groovyls",
-        "jdtls",
         "jedi_language_server",
         "eslint",
         "ts_ls",
@@ -158,10 +157,6 @@ return {
         -- Groovyls
         groovyls = function()
           require("lspconfig").groovyls.setup({})
-        end,
-        -- Jdtls (Java)
-        jdtls = function()
-          require("lspconfig").jdtls.setup({})
         end,
         -- Jedi (Python)
         jedi_language_server = function()
